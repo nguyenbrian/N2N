@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>N2N.ai - Enterprise AI</title>
+        <meta name="author" content="Matthew Howell" />
+        <meta name="description" content="fullPage continuous scrolling demo." />
+        <meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
+        <meta name="Resource-type" content="Document" />
+
+
+        <link rel="stylesheet" type="text/css" href="fullpage.css" />
+        <link rel="stylesheet" type="text/css" href="custom.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/css/uikit.min.css" />
+
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit-icons.min.js"></script>
+    </head>
+
+    <body>
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+            <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+                <div class="uk-navbar-left">
+                    <a class="uk-navbar-item uk-logo" href="#">LOGO</a>
+                </div>
+
+                <div class="uk-navbar-right">
+        
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#">AI Software</a></li>
+                        <li><a href="#">Industries</a></li>
+                        <li><a href="#">Customers</a></li>
+                        <li><a href="#">Enterprise AI</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="" uk-icon="search"></a></li>
+                    </ul>
+
+                    <div class="uk-navbar-item">
+                        <button class="uk-button uk-button-default">Get Started</button>
+                    </div>
+        
+                </div>
+            </nav>
+        </div>
+
+        <div id="fp-nav" class="fp-right">
+            <ul>
+                <li>
+                    <a data-menuanchor="page1" href="#page1" class="active">
+                        <span class="fp-sr-only">Section 1</span>
+                        <span></span>
+                    </a>
+                </li>
+                <li>
+                    <a data-menuanchor="page2" href="#page2" class="">
+                            <span class="fp-sr-only">N2N.ai</span>
+                            <span></span>
+                    </a>
+                    <div class="fp-tooltip fp-right">N2N.ai</div>
+                </li>
+                <li>
+                    <a data-menuanchor="page3" href="#page3" class="">
+                        <span class="fp-sr-only">Customers</span>
+                        <span></span>
+                    </a>
+                    <div class="fp-tooltip fp-right">Customers</div>
+                </li>
+                <li>
+                    <a data-menuanchor="page4" href="#page4" class="">
+                        <span class="fp-sr-only">Glassdoor</span>
+                        <span></span></a><div class="fp-tooltip fp-right">Glassdoor</div>
+                </li>
+                <li>
+                    <a data-menuanchor="page5" href="#page5" class="">
+                        <span class="fp-sr-only">AI Software</span>
+                        <span></span></a><div class="fp-tooltip fp-right">AI Software</div>
+                </li>
+                <li>
+                    <a data-menuanchor="page6" href="#page6">
+                        <span class="fp-sr-only">Industries</span>
+                        <span></span></a><div class="fp-tooltip fp-right">Industries</div>
+                </li>
+                <li>
+                    <a data-menuanchor="page7" href="#page7">
+                        <span class="fp-sr-only">Company</span>
+                        <span></span></a><div class="fp-tooltip fp-right">Company</div>
+                </li>
+                <li>
+                    <a data-menuanchor="page8" href="#page8">
+                        <span class="fp-sr-only">Next Steps</span>
+                        <span></span></a><div class="fp-tooltip fp-right">Next Steps</div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="fullpage">
+            <div class="section active" id="section0" data-anchor="page1">
+                <div>
+                    <h1 class="heading">Enterprise AI</h1>
+                </div>
+            </div>
+            <div class="section" id="section1" data-anchor="page2">
+                <div>
+                    <h1 class="heading">Enterprise AI for</h1>
+                </div>
+            </div>
+            <div class="section" id="section2" data-anchor="page3">
+                <div class="slide" id="slide1">
+                    <h1>Rapidly building AI applications for manufacturing</h1>
+                    <button class="uk-button uk-button-default uk-light uk-margin-large-top">See how</button>
+                </div>
+                <div class="slide" id="slide2">
+                    <h1>Enterprise-scale AI across upstream, midstream, and downstream operations</h1>
+                    <button class="uk-button uk-button-default uk-light uk-margin-large-top">See how</button>
+                </div>
+                <div class="slide" id="slide3">
+                    <h1>Increasing aircraft readiness using C3 Predictive Maintenance</h1>
+                    <button class="uk-button uk-button-default uk-light uk-margin-large-top">See how</button>
+                </div>
+                <div class="slide" id="slide1">
+                    <h1>Largest production deployment of AI and IoT applications</h1>
+                    <button class="uk-button uk-button-default uk-light uk-margin-large-top">See how</button>
+                </div>
+                <div class="slide" id="slide2">
+                    <h1>Enterprise AI for oil and gas</h1>
+                    <button class="uk-button uk-button-default uk-light uk-margin-large-top">See how</button>
+                </div>
+                <div class="slide" id="slide3">
+                    <h1>Enterprise data analytics platform and AMI operations </h1>
+                    <button class="uk-button uk-button-default uk-light uk-margin-large-top">See how</button>
+                </div>
+                <div class="slide" id="slide1">
+                    <h1>Using AI for F-35 Joint Strike Fighter operations</h1>
+                    <button class="uk-button uk-button-default uk-light uk-margin-large-top">See how</button>
+                </div>
+                <div class="slide" id="slide2">
+                    <h1>Global 100 enterprise digital transformation</h1>
+                    <button class="uk-button uk-button-default uk-light uk-margin-large-top">See how</button>
+                </div>
+                <div class="slide" id="slide3">
+                    <h1>AI for defense</h1>
+                    <button class="uk-button uk-button-default uk-light uk-margin-large-top">See how</button>
+                </div>
+            </div>
+            <div class="section" id="section3" data-anchor="page4">
+                <div>
+                    <h1 class="heading uk-margin-large-bottom">Careers</h1>
+                    <button class="uk-button uk-button-default uk-light">View career oppurtunities</button>
+                </div>
+            </div>
+            <div class="section" id="section4" data-anchor="page5">
+                <div>
+                    <h1 class="heading uk-margin-large-bottom">Accelerate digital transformation</h1>
+                    <p class="uk-light">N2N.ai helps industry leaders leverage enterprise AI to thrive in the digital era. They achieve results faster, for less money, and at unprecedented scale.</p>
+                </div>
+            </div>
+            <div class="section" id="section5" data-anchor="page6">
+                <div>
+                    <div class='uk-light' uk-grid style="width: 500px; margin: 0 auto">
+                        <div class="uk-width-auto@m">
+                            <ul class="uk-tab-left" uk-tab="connect: #component-tab-left; animation: uk-animation-fade">
+                                <li><a href="#">Manufacturing</a></li>
+                                <li><a href="#">Oil & Gas</a></li>
+                                <li><a href="#">Utilities</a></li>
+                                <li><a href="#">Banking</a></li>
+                                <li><a href="#">Aerospace & Defense</a></li>
+                                <li><a href="#">Healthcare</a></li>
+                                <li><a href="#">Retail</a></li>
+                                <li><a href="#">Telecommunications</a></li>
+                                <li><a href="#">Smart Cities</a></li>
+                                <li><a href="#">Transportation</a></li>
+                            </ul>
+                        </div>
+                        <div class="uk-width-expand@m">
+                            <ul id="component-tab-left" class="uk-switcher">
+                                <li>
+                                    <p>One system, five steps, 23 seconds to action. This used to take over a day. We have now collapsed all that heavy lifting into the application.</p>
+                                    <button class="uk-button uk-button-default uk-light">Explore manufacturing</button>
+                                </li>
+                                <li><p>If we can predict where a failure might be and prevent an incident from occurring, that's the best thing you can do from a utility perspective.</p>
+                                    <button class="uk-button uk-button-default uk-light">Explore oil & gas</button>
+                                </li>
+                                <li>
+                                    <p>The combination of our data science expertise and the software development expertise that N2N.ai brings is really powerful.</p>
+                                    <button class="uk-button uk-button-default uk-light">Explore utilities</button>
+                                </li>
+                                <li>
+                                    <p>We see N2N.ai as the missing link in deploying end-user applications in data science.</p>
+                                    <button class="uk-button uk-button-default uk-light">Explore banking</button>
+                                </li>
+                                <li>
+                                    <p>With AI and ML coming online and the volume of data that's coming off the various intelligence feeds and from the battlefield, we are trying to make sense of that. And N2N.ai has been a great partner in that endeavor.</p>
+                                    <button class="uk-button uk-button-default uk-light">Explore Aerospace & Defense</button>
+                                </li>
+                                <li>
+                                    <p>On the one hand it’s very much about dollars and ROI, but on the other we are really focused on customer satisfaction.</p>
+                                    <button class="uk-button uk-button-default uk-light">Explore Healthcare</button>
+                                </li>
+                                <li>
+                                    <p>The N2N AI Suite is an ideal fit for the incessantly data-driven retail sector.</p>
+                                    <button class="uk-button uk-button-default uk-light">Explore Retail</button>
+                                </li>
+                                <li>
+                                    <p>When comparing N2N AI Suite to a competitive platform, we realized 26x savings in delivery and huge benefits from a cost and quality stand-point.</p>
+                                    <button class="uk-button uk-button-default uk-light">Explore Telecommunications</button>
+                                </li>
+                                <li>
+                                    <p>ENGIE is looking to provide a zero-carbon future. The C3 AI Suite is important because it helps us build applications faster.</p>
+                                    <button class="uk-button uk-button-default uk-light">Explore Smart Cities</button>
+                                </li>
+                                <li>
+                                    <p>What predictive AI allows you to do is get ahead of the curve.</p>
+                                    <button class="uk-button uk-button-default uk-light">Explore transportation</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section6" data-anchor="page7">
+                <div>
+                    <div class="uk-margin-bottom">
+                        <h1 class="uk-display-inline">This is N2N.ai</h1>
+                        <button class="uk-button uk-button-default uk-light uk-margin-large-left">View all news</button>
+                    </div>
+                    
+                    
+                    <div class="uk-position-relative uk-visible-toggle uk-light slider" tabindex="-1" uk-slider>
+                        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m">
+                            <li>
+                                <div class="uk-card uk-card-default uk-card-secondary">
+                                    <div class="uk-card-media-top">
+                                        <img src="images/light.jpg" alt="">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Media Top</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="uk-position-center uk-panel"></div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default uk-card-secondary">
+                                    <div class="uk-card-media-top">
+                                        <img src="images/light.jpg" alt="">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Media Top</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="uk-position-center uk-panel"></div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default uk-card-secondary">
+                                    <div class="uk-card-media-top">
+                                        <img src="images/light.jpg" alt="">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Media Top</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="uk-position-center uk-panel"></div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default uk-card-secondary">
+                                    <div class="uk-card-media-top">
+                                        <img src="images/light.jpg" alt="">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Media Top</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="uk-position-center uk-panel"></div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default uk-card-secondary">
+                                    <div class="uk-card-media-top">
+                                        <img src="images/light.jpg" alt="">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Media Top</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="uk-position-center uk-panel"></div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default uk-card-secondary">
+                                    <div class="uk-card-media-top">
+                                        <img src="images/light.jpg" alt="">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Media Top</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="uk-position-center uk-panel"></div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default uk-card-secondary">
+                                    <div class="uk-card-media-top">
+                                        <img src="images/light.jpg" alt="">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Media Top</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="uk-position-center uk-panel"></div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default uk-card-secondary">
+                                    <div class="uk-card-media-top">
+                                        <img src="images/light.jpg" alt="">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Media Top</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="uk-position-center uk-panel"></div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default uk-card-secondary">
+                                    <div class="uk-card-media-top">
+                                        <img src="images/light.jpg" alt="">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Media Top</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="uk-position-center uk-panel"></div>
+                            </li>
+                            <li>
+                                <div class="uk-card uk-card-default uk-card-secondary">
+                                    <div class="uk-card-media-top">
+                                        <img src="images/light.jpg" alt="">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Media Top</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="uk-position-center uk-panel"></div>
+                            </li>
+                        </ul>
+                    
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section7" data-anchor="page8">
+                <div>
+                    <h2 class="uk-light">Proven results in weeks, not years</h2>
+                    <h2 class="uk-light">Take the next step</h2>
+                    <div id="nextSteps" class="uk-child-width-1-3@m uk-grid-small uk-grid-match uk-margin-large-top" uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-secondary uk-card-body uk-card-hover">
+                                <h3 class="uk-card-title">Speak with an expert</h3>
+                                <p>Talk to one of our AI experts about what N2N.ai products can do.</p>
+                                <a href="" uk-icon="arrow-right"></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-secondary uk-card-body uk-card-hover">
+                                <h3 class="uk-card-title">Request a demo</h3>
+                                <p>See the N2N AI Suite in action and learn more about our applications.</p>
+                                <a href="" uk-icon="arrow-right"></a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-secondary uk-card-body uk-card-hover">
+                                <h3 class="uk-card-title">Schedule a briefing</h3>
+                                <p>Meet the N2N.ai team in person and see what it's like to work with us.</p>
+                                <a href="" uk-icon="arrow-right"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="fullpage.js"></script>
+        <script type="text/javascript">
+            var myFullpage = new fullpage('#fullpage', {
+                sectionsColor: ['#1a1a1a', '#242424', '#1a1a1a', '#242424', '#1a1a1a', '#242424', '#1a1a1a', '#242424'],
+                anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
+                menu: '#fp-nav',
+                lazyLoad: true
+            });
+        </script>
+
+    </body>
+</html>
