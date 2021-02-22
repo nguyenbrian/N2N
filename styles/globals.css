@@ -1,0 +1,263 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 300 !important;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+.frontpage:not(.notdark) h1,
+.frontpage:not(.notdark) h2 {
+  color: #ffffff !important;
+}
+
+.frontpage {
+  text-align: center;
+}
+
+.heading {
+  font-size: 4em;
+}
+
+.text {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  margin-bottom: 1rem;
+  list-style-position: outside;
+  line-height: 1.6;
+}
+
+#fp-nav ul li,
+.fp-slidesNav ul li {
+  height: 30px;
+}
+
+#fp-nav ul li a span {
+  border-radius: 0;
+  position: absolute;
+  z-index: 1;
+  height: 30px;
+  width: 2px;
+  border: 0;
+  background: #fff;
+  left: 50%;
+  top: 0;
+  opacity: 0.3;
+  margin: -2px 0 0 -2px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a span,
+#fp-nav ul li:hover a.active span {
+  height: 30px;
+  width: 2px;
+  background: #fff;
+  opacity: 1;
+  margin: -2px 0 0 -2px;
+  border-radius: 0;
+}
+
+#fp-nav ul li a span,
+#fp-nav ul li .fp-tooltip {
+  top: 0 !important;
+}
+
+.fp-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+#menu li {
+  display: inline-block;
+  margin: 10px;
+  color: #000;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+#menu li.active {
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+#menu li a {
+  text-decoration: none;
+  color: #000;
+}
+#menu li.active a:hover {
+  color: #000;
+}
+#menu li:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+#menu li a,
+#menu li.active a {
+  padding: 9px 18px;
+  display: block;
+}
+#menu li.active a {
+  color: #fff;
+}
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.fp-controlArrow.fp-next {
+  right: 125px;
+}
+
+.fp-controlArrow.fp-prev {
+  left: 125px;
+}
+
+.slide h1 {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.slider {
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+#nextSteps {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.n2n-button:hover {
+  background-color: #d72323 !important;
+  color: #fff;
+  border-color: #d72323 !important;
+  transition: all 0.3s;
+  transition-timing-function: ease;
+}
+
+.n2n-navbar:hover {
+  color: #d72323 !important;
+  transition: all 0.3s;
+  transition-timing-function: ease;
+}
+
+.n2n-tab li.uk-active > a {
+  border-color: #d72323 !important;
+  transition: all 0.3s;
+  transition-timing-function: ease;
+}
+
+#n2n-switcher > div {
+  width: 600px;
+}
+
+@media only screen and (max-width: 670px) {
+  #n2n-switcher > div {
+    width: auto;
+  }
+  #icon-text {
+    display: none;
+  }
+  .uk-navbar-nav > li > a {
+    padding: 10px;
+  }
+
+  .uk-navbar-item .uk-button {
+    padding: 0px 10px;
+  }
+
+  .uk-navbar-item {
+    padding: 0px 10px;
+  }
+
+  .uk-logo img {
+    height: 30px;
+    width: 30px;
+  }
+
+  #navbar-get-started {
+    display: none;
+  }
+
+  .fp-controlArrow.fp-next {
+    right: 5px !important;
+    border-width: 15px 0 15px 10px !important;
+  }
+
+  .fp-controlArrow.fp-prev {
+    left: 5px !important;
+    border-width: 15px 10px 15px 0 !important;
+  }
+
+  html {
+    font-size: 14px;
+  }
+
+  #n2n-switcher .uk-grid > * {
+    padding-left: 0px;
+  }
+
+  .content .fp-tableCell {
+    vertical-align: top;
+  }
+
+  /* .fp-controlArrow.fp-next {
+    border-width: 20px 0 20px 15px;
+  } */
+}
+
+/* .n2n-border-bottom-left {
+  box-shadow: -10px 30px 0 0px white, -10px 30px 0 7px #d72323;
+}
+
+.n2n-border-top-right {
+  box-shadow: 10px -30px 0 0px white, 10px -30px 0 7px #d72323;
+}
+
+.n2n-border-solid-bottom-left {
+  box-shadow: -30px 20px#d72323;
+}
+
+.n2n-border-solid-right {
+  box-shadow: 25px 15px#d72323;
+}
+
+.n2n-border-solid-top-left {
+  box-shadow: -20px -35px#d72323;
+} */
