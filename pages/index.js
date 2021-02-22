@@ -37,12 +37,13 @@ export default function Home() {
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
             }}
-            className="slide uk-padding-large"
+            className="slide"
             id="slide1"
           >
             <h1>
-              Manufacturing: AI – The driving force of your industry digital
-              transformation
+              The latest digital manufacturing trends are aimed at connecting
+              physical and virtual factory environments to boost productivity,
+              efficiency and profitability.
             </h1>
             <Link href="/industries/manufacturing">
               <button className="n2n-button uk-light uk-button uk-button-default uk-margin-large-top">
@@ -60,7 +61,7 @@ export default function Home() {
             className="slide"
             id="slide2"
           >
-            <h1>Utilities tagline</h1>
+            <h1>Using AI to accelerate Digital Transformation at Utilities</h1>
             <Link href="/industries/utilities">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
                 See how
@@ -77,7 +78,10 @@ export default function Home() {
             className="slide"
             id="slide3"
           >
-            <h1>Oil and Gas tagline</h1>
+            <h1>
+              Overcoming Digitization Challenges in the Oil and Gas Industry -
+              Oil and Gas Industry Transforming Itself with the Help of AI
+            </h1>
             <Link href="/industries/oil-and-gas">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
                 See how
@@ -94,7 +98,7 @@ export default function Home() {
             className="slide"
             id="slide4"
           >
-            <h1>Banking tagline</h1>
+            <h1>AI-bank of the future: How can banks meet the AI challenge?</h1>
             <Link href="/industries/banking">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
                 See how
@@ -111,7 +115,10 @@ export default function Home() {
             className="slide"
             id="slide5"
           >
-            <h1>Healthcare tagline</h1>
+            <h1>
+              Transforming healthcare with AI: The impact on the workforce and
+              organizations
+            </h1>
             <Link href="/industries/healthcare">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
                 See how

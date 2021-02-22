@@ -30,7 +30,7 @@ export default function Layout(props) {
         <meta name="theme-color" content="#ffffff"></meta>
 
         <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@300&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@300&display=swap"
           rel="stylesheet"
         />
 
