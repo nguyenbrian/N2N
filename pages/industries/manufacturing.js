@@ -1,6 +1,6 @@
 import Layout from "../../components/Layout";
 
-export default function Company() {
+export default function Manufacturing() {
   return (
     <Layout>
       <div className="uk-padding">
@@ -15,17 +15,20 @@ export default function Company() {
               </a>
             </h1>
 
-            {/* <p class="uk-article-meta">
-              Written by <a href="#">Super User</a> on 12 April 2012. Posted in{" "}
-              <a href="#">Blog</a>
-            </p> */}
-
-            <p className="uk-text-lead">
-              AI – The driving force of your industry digital transformation The
-              latest digital manufacturing trends are aimed at connecting
-              physical and virtual factory environments to boost productivity,
-              efficiency and profitability.
-            </p>
+            <div className="uk-inline">
+              <img src="/images/article_manufacturing.jpg" alt="" />
+              <div className="uk-overlay-primary uk-position-cover"></div>
+              <div className="uk-overlay uk-position-bottom uk-light">
+                <p className="uk-text-lead">
+                  AI – The driving force of your industry digital transformation
+                </p>
+                <p className="uk-text-lead">
+                  The latest digital manufacturing trends are aimed at
+                  connecting physical and virtual factory environments to boost
+                  productivity, efficiency and profitability.
+                </p>
+              </div>
+            </div>
 
             <p>
               Evolution of the manufacturing industry can be seen with the
