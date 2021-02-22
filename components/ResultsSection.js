@@ -1,10 +1,10 @@
+import ContactUs from "./ContactUs";
+
 export default function ResultsSection(props) {
   return (
     <div className="section frontpage notdark" id="section5">
       <div className="uk-padding">
-        <h1 className="uk-heading-medium">
-          Proven results in weeks, not years
-        </h1>
+        <h1 className="uk-heading-medium">Results in weeks, not years</h1>
         <h2>Take the next step</h2>
         <div
           id="nextSteps"
@@ -18,7 +18,7 @@ export default function ResultsSection(props) {
               <p>
                 Talk to one of our AI experts about what N2N.ai products can do.
               </p>
-              <a uk-icon="icon: arrow-right; ratio: 2"></a>
+              <ContactUs />
             </div>
           </div>
           <div>
@@ -29,7 +29,7 @@ export default function ResultsSection(props) {
                 prototype and full enterprise grade products while learn more
                 about our applications and services.
               </p>
-              <a uk-icon="icon: arrow-right; ratio: 2"></a>
+              <ContactUs />
             </div>
           </div>
           <div>
@@ -39,7 +39,7 @@ export default function ResultsSection(props) {
                 Meet the N2N.ai team in person and see what it's like to work
                 with us.
               </p>
-              <a uk-icon="icon: arrow-right; ratio: 2"></a>
+              <ContactUs />
             </div>
           </div>
         </div>

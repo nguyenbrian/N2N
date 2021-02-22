@@ -7,7 +7,7 @@ export default function Industries() {
       <div className="uk-padding">
         <h1>Industries</h1>
         <div
-          className="uk-grid-small uk-grid-match uk-child-width-1-5@m uk-child-width-1-2@s uk-text-center"
+          className="uk-grid-small uk-grid-match uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center"
           uk-grid="true"
         >
           <div>

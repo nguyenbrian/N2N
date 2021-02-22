@@ -5,7 +5,7 @@ import ResultsSection from "../components/ResultsSection";
 export default function Results() {
   return (
     <Layout>
-      <Fullpage sectionsColor={["#fff"]}>
+      <Fullpage anchors={["results", "contact"]} sectionsColor={["#fff"]}>
         <ResultsSection />
       </Fullpage>
     </Layout>

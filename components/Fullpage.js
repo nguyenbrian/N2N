@@ -1,4 +1,5 @@
 import ReactFullpage from "@fullpage/react-fullpage";
+import ContactDetails from "./ContactDetails";
 
 export default function Fullpage(props) {
   return (
@@ -21,22 +22,7 @@ export default function Fullpage(props) {
               id="section-footer"
             >
               <div className="uk-light uk-padding" style={{ height: "315px" }}>
-                <h1>Contact</h1>
-                <p className="uk-margin-remove">
-                  <span
-                    className="uk-margin-small-right"
-                    uk-icon="icon: mail"
-                  ></span>{" "}
-                  contact@n2n.ai
-                </p>
-                <p className="uk-margin-remove">
-                  <span
-                    className="uk-margin-small-right"
-                    uk-icon="icon: receiver"
-                  ></span>{" "}
-                  +61 414 151 151
-                </p>
-
+                <ContactDetails />
                 <p className="uk-margin-top">
                   © 2021 N2N AI Pty Ltd. All Rights Reserved.
                 </p>
