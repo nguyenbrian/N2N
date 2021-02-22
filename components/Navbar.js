@@ -35,6 +35,11 @@ export default function Navbar(props) {
           <div className="uk-navbar-right">
             <ul className="uk-navbar-nav">
               <li>
+                <Link href="/enterprise-ai">
+                  <a className="n2n-navbar">Enterprise AI</a>
+                </Link>
+              </li>
+              <li>
                 <Link href="/industries">
                   <a className="n2n-navbar">Industries</a>
                 </Link>
@@ -113,11 +118,6 @@ export default function Navbar(props) {
                     </div>
                   </div>
                 </div>
-              </li>
-              <li>
-                <Link href="/enterprise-ai">
-                  <a className="n2n-navbar">Enterprise AI</a>
-                </Link>
               </li>
               <li>
                 <Link href="/company">

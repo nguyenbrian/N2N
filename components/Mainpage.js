@@ -135,7 +135,7 @@ export default function Mainpage() {
             className="slide"
             id="slide6"
           >
-            <h1>Defense tagline</h1>
+            <h1>How AI and Robotics will disrupt the Defense industry?</h1>
             <Link href="/industries/defense">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
                 See how
@@ -152,7 +152,7 @@ export default function Mainpage() {
             className="slide"
             id="slide7"
           >
-            <h1>Retail tagline</h1>
+            <h1>Artificial intelligence in retail: Scale at speed</h1>
             <Link href="/industries/retail">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
                 See how
@@ -169,10 +169,10 @@ export default function Mainpage() {
             className="slide"
             id="slide8"
           >
-            <h1>Transportation tagline</h1>
+            <h1>The Role of AI and Big Data in Modern-Day Logistics</h1>
             <Link href="/industries/transportation">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
-                See how
+                See more
               </button>
             </Link>
           </div>
@@ -186,7 +186,7 @@ export default function Mainpage() {
             className="slide"
             id="slide9"
           >
-            <h1>Smart cities tagline</h1>
+            <h1>How to embark on becoming a smart digital city of tomorrow</h1>
             <Link href="/industries/smart-cities">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
                 See how
@@ -203,10 +203,12 @@ export default function Mainpage() {
             className="slide"
             id="slide10"
           >
-            <h1>Education tagline</h1>
+            <h1>
+              Impact of Artificial Intelligence on the current education system
+            </h1>
             <Link href="/industries/education">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
-                See how
+                See more
               </button>
             </Link>
           </div>
@@ -326,9 +328,9 @@ export default function Mainpage() {
                   </li>
                   <li>
                     <p>
-                      RW: On the one hand it’s very much about dollars and ROI,
-                      but on the other we are really focused on customer
-                      satisfaction.
+                      The rise of digital platforms is empowering the military,
+                      enabling better continuity of operations and bringing
+                      armed forces at a new level of combat readiness.
                     </p>
                     <Link href="/industries/defense">
                       <button className="n2n-button uk-button uk-button-default uk-light">
@@ -338,8 +340,8 @@ export default function Mainpage() {
                   </li>
                   <li>
                     <p>
-                      RW: The N2N AI Suite is an ideal fit for the incessantly
-                      data-driven retail sector.
+                      Transformation in retail was already underway before the
+                      pandemic and is now accelerating, powered by data and AI.
                     </p>
                     <Link href="/industries/retail">
                       <button className="n2n-button uk-button uk-button-default uk-light">
@@ -349,9 +351,9 @@ export default function Mainpage() {
                   </li>
                   <li>
                     <p>
-                      RW: When comparing N2N AI Suite to a competitive platform,
-                      we realized 26x savings in delivery and huge benefits from
-                      a cost and quality stand-point.
+                      Industry 4.0 - one of the biggest disruptors to
+                      traditional freight and logistics, is transforming the way
+                      in which the industry continues to do business.
                     </p>
                     <Link href="/industries/transportation">
                       <button className="n2n-button uk-button uk-button-default uk-light">
@@ -361,9 +363,12 @@ export default function Mainpage() {
                   </li>
                   <li>
                     <p>
-                      RW: ENGIE is looking to provide a zero-carbon future. The
-                      N2N AI Suite is important because it helps us build
-                      applications faster.
+                      What makes a city a “smart city” is not just the degree of
+                      technology advancements that the city is abreast with. An
+                      integrated approach to technology implementation can help
+                      relieve particular challenges like parking and traffic
+                      management, street lighting, energy consumption, and
+                      public safety.
                     </p>
                     <Link href="/industries/smart-cities">
                       <button className="n2n-button uk-button uk-button-default uk-light">
@@ -373,8 +378,8 @@ export default function Mainpage() {
                   </li>
                   <li>
                     <p>
-                      RW: What predictive AI allows you to do is get ahead of
-                      the curve.
+                      Educators from all grade-levels are coming to realize the
+                      benefits of technology in the classroom.
                     </p>
                     <Link href="/industries/education">
                       <button className="n2n-button uk-button uk-button-default uk-light">

@@ -23,10 +23,11 @@ export default function ResultsSection(props) {
           </div>
           <div>
             <div className="uk-card uk-card-default uk-card-body uk-box-shadow-hover-large">
-              <h3 className="uk-card-title">Request a demo</h3>
+              <h3 className="uk-card-title">Build a prototype</h3>
               <p>
-                See the N2N AI Suite in action and learn more about our
-                applications.
+                Be together with N2N.ai team in action to build your best
+                prototype and full enterprise grade products while learn more
+                about our applications and services.
               </p>
               <a uk-icon="icon: arrow-right; ratio: 2"></a>
             </div>
