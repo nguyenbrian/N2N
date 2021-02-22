@@ -22,13 +22,13 @@ export default function Manufacturing() {
                 <p className="uk-text-lead">
                   AI – The driving force of your industry digital transformation
                 </p>
-                <p className="uk-text-lead">
-                  The latest digital manufacturing trends are aimed at
-                  connecting physical and virtual factory environments to boost
-                  productivity, efficiency and profitability.
-                </p>
               </div>
             </div>
+            <p className="uk-text-lead">
+              The latest digital manufacturing trends are aimed at connecting
+              physical and virtual factory environments to boost productivity,
+              efficiency and profitability.
+            </p>
 
             <p>
               Evolution of the manufacturing industry can be seen with the

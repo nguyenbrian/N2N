@@ -6,6 +6,7 @@ export default function ResultsSection(props) {
     <div className="uk-card-small uk-card-default uk-card-hover">
       <div className="uk-card-media-top">
         <Image
+          priority="true"
           layout="responsive"
           height="200px"
           width="300px"

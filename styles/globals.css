@@ -237,6 +237,10 @@ ul {
     vertical-align: top;
   }
 
+  .uk-text-lead {
+    font-size: 1.1rem;
+  }
+
   /* .fp-controlArrow.fp-next {
     border-width: 20px 0 20px 15px;
   } */
