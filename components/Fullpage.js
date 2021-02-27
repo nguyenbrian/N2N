@@ -10,6 +10,7 @@ export default function Fullpage(props) {
       scrollingSpeed={600} /* Options here */
       // scrollHorizontally={true} /* Because we are using the extension */
       // scrollHorizontallyKey={"YOUR KEY HERE"}
+      scrollOverflow={props.scrollOverflow}
       anchors={props.anchors !== undefined ? props.anchors : []}
       sectionsColor={props.sectionsColor}
       render={({ state, fullpageApi }) => {
@@ -23,7 +24,7 @@ export default function Fullpage(props) {
             >
               <div className="uk-light uk-padding" style={{ height: "315px" }}>
                 <ContactDetails />
-                <p className="uk-margin-top">
+                <p style={{ display: "block" }} className="uk-margin-top">
                   © 2021 N2N AI Pty Ltd. All Rights Reserved.
                 </p>
               </div>

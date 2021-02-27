@@ -4,7 +4,9 @@ export default function ResultsSection(props) {
   return (
     <div className="section frontpage notdark" id="section5">
       <div className="uk-padding">
-        <h1 className="uk-heading-medium">Results in weeks, not years</h1>
+        <h1 style={{ marginTop: "90px" }} className="uk-heading-medium">
+          Results in weeks, not years
+        </h1>
         <h2>Take the next step</h2>
         <div
           id="nextSteps"

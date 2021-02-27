@@ -2,7 +2,7 @@ import ContactDetails from "./ContactDetails";
 
 export default function ContactUs(props) {
   return (
-    <>
+    <div>
       <button
         className="n2n-button uk-button uk-button-default"
         uk-toggle="target: #modal-center"
@@ -10,7 +10,7 @@ export default function ContactUs(props) {
         Contact us
       </button>
 
-      <div id="modal-center" class="uk-flex-top" uk-modal="true">
+      <div id="modal-center" className="uk-flex-top" uk-modal="true">
         <div className="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
           <button
             className="uk-modal-close-default"
@@ -22,6 +22,6 @@ export default function ContactUs(props) {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
