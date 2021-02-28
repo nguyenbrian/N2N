@@ -5,7 +5,7 @@ import ResultsSection from "../components/ResultsSection";
 import { useTranslation } from "next-i18next";
 
 export default function Mainpage() {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation("index");
 
   return (
     <Layout>
@@ -25,8 +25,8 @@ export default function Mainpage() {
           id="section0"
         >
           <div className="uk-padding">
-            <h1 className="uk-heading-medium">{t("main")}</h1>
-            <h2>Transforming your future business. Now.</h2>
+            <h1 className="uk-heading-medium">{t("section0-h1")}</h1>
+            <h2>{t("section0-h2")}</h2>
           </div>
         </div>
         <div className="section frontpage uk-light" id="section2">

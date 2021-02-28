@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LanguageSelect from "./LanguageSelect";
 
 export default function NavbarMobile(props) {
   return (
@@ -157,12 +158,9 @@ export default function NavbarMobile(props) {
                     </button>
                   </Link>
                 </li>
-                {/* <div className="uk-margin-top">
-                  <select className="uk-select">
-                    <option>English</option>
-                    <option>Vietnamese</option>
-                  </select>
-                </div> */}
+                <div className="uk-margin-top">
+                  <LanguageSelect variant="dark" pos="top" offset="10" />
+                </div>
               </ul>
             </div>
           </div>
