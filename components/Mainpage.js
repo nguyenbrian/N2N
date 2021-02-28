@@ -2,8 +2,11 @@ import Fullpage from "../components/Fullpage";
 import Layout from "../components/Layout";
 import Link from "next/link";
 import ResultsSection from "../components/ResultsSection";
+import { useTranslation } from "next-i18next";
 
 export default function Mainpage() {
+  const { t } = useTranslation("common");
+
   return (
     <Layout>
       <Fullpage
@@ -22,9 +25,7 @@ export default function Mainpage() {
           id="section0"
         >
           <div className="uk-padding">
-            <h1 className="uk-heading-medium">
-              This is Complete Enterprise AI.
-            </h1>
+            <h1 className="uk-heading-medium">{t("main")}</h1>
             <h2>Transforming your future business. Now.</h2>
           </div>
         </div>
