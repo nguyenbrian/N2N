@@ -1,4 +1,4 @@
-import ContactUs from "./ContactUs";
+import ContactUsButton from "./ContactUsButton";
 
 export default function ResultsSection(props) {
   return (
@@ -12,7 +12,9 @@ export default function ResultsSection(props) {
           id="nextSteps"
           className="uk-child-width-1-1 uk-child-width-1-3@m uk-grid-small uk-grid-match uk-margin-large-top"
           uk-grid="true"
-          style={{ maxWidth: "100%" }}
+          style={{
+            maxWidth: "100%",
+          }}
         >
           <div>
             <div className="uk-card uk-card-default uk-card-body uk-box-shadow-hover-large">
@@ -20,7 +22,7 @@ export default function ResultsSection(props) {
               <p>
                 Talk to one of our AI experts about what N2N.ai products can do.
               </p>
-              <ContactUs />
+              <ContactUsButton modalID="contact-us-modal" />
             </div>
           </div>
           <div>
@@ -31,7 +33,7 @@ export default function ResultsSection(props) {
                 prototype and full enterprise grade products while learn more
                 about our applications and services.
               </p>
-              <ContactUs />
+              <ContactUsButton modalID="contact-us-modal" />
             </div>
           </div>
           <div>
@@ -41,7 +43,7 @@ export default function ResultsSection(props) {
                 Meet the N2N.ai team in person and see what it's like to work
                 with us.
               </p>
-              <ContactUs />
+              <ContactUsButton modalID="contact-us-modal" />
             </div>
           </div>
         </div>

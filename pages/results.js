@@ -5,7 +5,11 @@ import ResultsSection from "../components/ResultsSection";
 export default function Results() {
   return (
     <Layout>
-      <Fullpage anchors={["results", "contact"]} sectionsColor={["#fff"]}>
+      <Fullpage
+        scrollOverflow={true}
+        anchors={["results", "contact"]}
+        sectionsColor={["#fff"]}
+      >
         <ResultsSection />
       </Fullpage>
     </Layout>

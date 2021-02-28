@@ -7,7 +7,7 @@ export default function Fullpage(props) {
       // pluginWrapper={pluginWrapper}
       //fullpage options
       // licenseKey={"YOUR_KEY_HERE"}
-      scrollingSpeed={600} /* Options here */
+      scrollingSpeed={500} /* Options here */
       // scrollHorizontally={true} /* Because we are using the extension */
       // scrollHorizontallyKey={"YOUR KEY HERE"}
       scrollOverflow={props.scrollOverflow}
