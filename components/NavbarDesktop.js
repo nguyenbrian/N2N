@@ -143,17 +143,16 @@ export default function NavbarDesktop(props) {
               </button>
             </Link>
           </div>
-          <div className="uk-navbar-item">
+          {/*<div className="uk-navbar-item">
             <a uk-icon="world"></a>
             <div uk-dropdown="mode: click; pos: bottom-right; offset: 45">
-              {/* mode: click; ; boundary: .uk-navbar-container; boundary-align: true*/}
               <p className="uk-margin-small-bottom">Choose a language</p>
               <select className="uk-select">
                 <option>English</option>
                 <option>Vietnamese</option>
               </select>
             </div>
-          </div>
+          </div> */}
         </div>
       </nav>
     </div>

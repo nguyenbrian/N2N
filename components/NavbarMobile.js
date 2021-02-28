@@ -157,12 +157,12 @@ export default function NavbarMobile(props) {
                     </button>
                   </Link>
                 </li>
-                <div className="uk-margin-top">
+                {/* <div className="uk-margin-top">
                   <select className="uk-select">
                     <option>English</option>
                     <option>Vietnamese</option>
                   </select>
-                </div>
+                </div> */}
               </ul>
             </div>
           </div>
