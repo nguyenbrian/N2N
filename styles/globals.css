@@ -245,9 +245,9 @@ ul {
     border-width: 15px 10px 15px 0 !important;
   }
 
-  html {
+  /* html {
     font-size: 14px;
-  }
+  } */
 
   #n2n-switcher .uk-grid > * {
     padding-left: 0px;

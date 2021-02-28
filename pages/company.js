@@ -5,7 +5,7 @@ import Fullpage from "../components/Fullpage";
 export default function Company() {
   return (
     <Layout>
-      <Fullpage>
+      <Fullpage scrollOverflow={true}>
         <div className="section" id="section0">
           <div className="uk-flex uk-flex-center">
             <img

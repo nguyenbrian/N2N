@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 export default function EnterpriseAI() {
   return (
     <Layout>
-      <Fullpage>
+      <Fullpage scrollOverflow={true}>
         <div className="section content" id="section0">
           <div
             className="avoid-navbar uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@m uk-margin"

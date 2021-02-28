@@ -10,11 +10,7 @@ export default function IndustryPage(props) {
               className="uk-button uk-button-default uk-margin-bottom"
               type="button"
             >
-              <span
-                uk-icon="icon:  chevron-left"
-                className="uk-margin-right"
-              ></span>
-              Explore industries
+              <span uk-icon="icon:  chevron-left"></span>
             </button>
           </Link>
           <div

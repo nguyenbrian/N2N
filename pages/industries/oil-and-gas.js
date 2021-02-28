@@ -4,7 +4,7 @@ export default function OilAndGas() {
   return (
     <IndustryPage
       title="Oil & Gas"
-      tagline="Overcoming Digitization Challenges in the Oil and Gas Industry - Oil and Gas Industry Transforming Itself with the Help of AI"
+      tagline="Overcoming Digitization Challenges in the Oil and Gas Industry"
       src="/images/article_oil-and-gas.jpg"
     >
       <p>

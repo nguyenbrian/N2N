@@ -6,9 +6,9 @@ export default function ContactUs(props) {
     <Layout>
       <Fullpage scrollOverflow={true}>
         <div className="section uk-animation-fade" id="section0">
-          <div className="uk-flex uk-flex-center">
+          <div className="uk-flex uk-flex-center avoid-navbar">
             <div className="uk-padding-large uk-width-1-2@s">
-              <h1 className="uk-margin-large-top">Contact us</h1>
+              <h1>Contact us</h1>
               <form className="uk-form-stacked">
                 <div className="uk-margin">
                   <label className="uk-form-label" htmlFor="form-stacked-text">
