@@ -11,7 +11,6 @@ export default function Mainpage() {
         sectionsColor={["#1a1a1a", "#242424", "#1a1a1a", "#fff"]}
         scrollOverflow={true}
       >
-        bankb
         <div
           style={{
             backgroundImage: `url(/images/frontpage.jpg)`,

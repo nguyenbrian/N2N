@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import Fullpage from "../components/Fullpage";
+import HalfImage from "../components/HalfImage";
 
 export default function Careers() {
   return (
@@ -24,22 +25,10 @@ export default function Careers() {
           </div>
         </div>
         <div className="section content" id="section1">
-          <div
-            className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
-            style={{ boxShadow: "none" }}
-            uk-grid="true"
-          >
-            <div className="n2n-border-bottom-left uk-card-media-left uk-cover-container">
-              <img src="images/careers_1.jpg" alt="" uk-cover="true" />
-              <canvas width="600" height="500"></canvas>
-            </div>
-            <div>
-              <div className="uk-card-body uk-card-large">
-                <h1>Career Opportunities</h1>
-                <p>There are currently no jobs available.</p>
-              </div>
-            </div>
-          </div>
+          <HalfImage variant="left" src="images/careers_1.jpg">
+            <h1>Career Opportunities</h1>
+            <p>There are currently no jobs available.</p>
+          </HalfImage>
         </div>
       </Fullpage>
     </Layout>
