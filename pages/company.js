@@ -8,18 +8,17 @@ export default function Company() {
       <Fullpage>
         <div className="section" id="section0">
           <div className="uk-flex uk-flex-center">
-            <Image
+            <img
               width="450px"
               height="450px"
               src="/images/logo_display.png"
               alt=""
-              priority="true"
             />
           </div>
         </div>
         <div className="section content" id="section1">
           <div
-            className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+            className="avoid-navbar uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
             style={{ boxShadow: "none" }}
             uk-grid="true"
           >
@@ -44,7 +43,7 @@ export default function Company() {
         </div>
         <div className="section content" id="section2">
           <div
-            className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
+            className="avoid-navbar uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin"
             style={{ boxShadow: "none" }}
             uk-grid="true"
           >

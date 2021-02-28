@@ -1,18 +1,19 @@
-import Image from "next/image";
+//import Image from "next/image";
 import Link from "next/link";
 
-export default function ResultsSection(props) {
+export default function IndustriesCard(props) {
   return (
-    <div className="uk-card-small uk-card-hover">
+    <div className="uk-card-small uk-card-default uk-box-shadow-hover-xlarge">
       <div className="uk-card-media-top">
-        {/* <Image
-          priority="true"
-          layout="responsive"
-          height="200px"
-          width="300px"
+        <img
+          style={{
+            height: "200px",
+            width: "100%",
+            objectFit: "cover",
+          }}
           src={props.src}
           alt=""
-        /> */}
+        />
       </div>
       <div className="uk-card-body">
         <h1 className="uk-card-title">{props.title}</h1>

@@ -1,7 +1,5 @@
-import Head from "next/head";
 import Fullpage from "../components/Fullpage";
 import Layout from "../components/Layout";
-import Navbar from "../components/Navbar";
 
 export default function EnterpriseAI() {
   return (
@@ -9,7 +7,7 @@ export default function EnterpriseAI() {
       <Fullpage>
         <div className="section content" id="section0">
           <div
-            className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@m uk-margin"
+            className="avoid-navbar uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@m uk-margin"
             style={{ boxShadow: "none" }}
             uk-grid="true"
           >
@@ -20,7 +18,7 @@ export default function EnterpriseAI() {
             <div>
               <div className="uk-card-body uk-card-large">
                 <h1 className="uk-heading-medium">
-                  “Together we will transform your business”
+                  Together we will transform your business
                 </h1>
                 <p>
                   N2N.ai develops new applications for Healthcare and Well-being
@@ -37,7 +35,7 @@ export default function EnterpriseAI() {
         </div>
         <div className="section content" id="section1">
           <div
-            className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@m uk-margin"
+            className="avoid-navbar uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@m uk-margin"
             style={{ boxShadow: "none" }}
             uk-grid="true"
           >
@@ -69,7 +67,7 @@ export default function EnterpriseAI() {
         </div>
         <div className="section content" id="section2">
           <div
-            className="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@m uk-margin"
+            className="avoid-navbar uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@m uk-margin"
             style={{ boxShadow: "none" }}
             uk-grid="true"
           >

@@ -5,14 +5,14 @@ export default function Industries() {
   return (
     <Layout>
       <div className="uk-padding">
-        <h1>Industries</h1>
+        <h1 className="avoid-navbar">Industries</h1>
         <div
           className="uk-grid-small uk-grid-match uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center"
           uk-grid="true"
         >
           <div>
             <IndustriesCard
-              // src="/images/frontpage-manufacturing.jpg"
+              src="/images/article_manufacturing_thumb.jpg"
               title="Manufacturing"
               link="/industries/manufacturing"
               // body="message"
@@ -20,7 +20,7 @@ export default function Industries() {
           </div>
           <div>
             <IndustriesCard
-              // src="/images/frontpage-utilities.jpg"
+              src="/images/article_utilities_thumb.jpg"
               title="Utilities"
               link="/industries/utilities"
               // body="message"
@@ -28,7 +28,7 @@ export default function Industries() {
           </div>
           <div>
             <IndustriesCard
-              // src="/images/frontpage-oil.jpg"
+              src="/images/article_oil-and-gas_thumb.jpg"
               title="Oil & Gas"
               link="/industries/oil-and-gas"
               // body="message"
@@ -36,7 +36,7 @@ export default function Industries() {
           </div>
           <div>
             <IndustriesCard
-              // src="/images/frontpage-banking.jpg"
+              src="/images/article_banking_thumb.jpg"
               title="Banking"
               link="/industries/banking"
               // body="message"
@@ -44,7 +44,7 @@ export default function Industries() {
           </div>
           <div>
             <IndustriesCard
-              // src="/images/frontpage-healthcare.jpg"
+              src="/images/article_healthcare_thumb.jpg"
               title="Healthcare"
               link="/industries/healthcare"
               // body="message"
@@ -52,7 +52,7 @@ export default function Industries() {
           </div>
           <div>
             <IndustriesCard
-              // src="/images/frontpage-defense.jpg"
+              src="/images/article_defense_thumb.jpg"
               title="Defense"
               link="/industries/defense"
               // body="message"
@@ -60,7 +60,7 @@ export default function Industries() {
           </div>
           <div>
             <IndustriesCard
-              // src="/images/frontpage-retail.jpg"
+              src="/images/article_retail_thumb.jpg"
               title="Retail"
               link="/industries/retail"
               // body="message"
@@ -68,7 +68,7 @@ export default function Industries() {
           </div>
           <div>
             <IndustriesCard
-              // src="/images/frontpage-transport.jpg"
+              src="/images/article_transport_thumb.jpg"
               title="Transportation"
               link="/industries/transportation"
               // body="message"
@@ -76,7 +76,7 @@ export default function Industries() {
           </div>
           <div>
             <IndustriesCard
-              // src="/images/frontpage-cities.jpg"
+              src="/images/article_smart-cities_thumb.jpg"
               title="Smart Cities"
               link="/industries/smart-cities"
               // body="message"
@@ -84,7 +84,7 @@ export default function Industries() {
           </div>
           <div>
             <IndustriesCard
-              // src="/images/frontpage-education.jpg"
+              src="/images/article_education_thumb.jpg"
               title="Education"
               link="/industries/education"
               // body="message"
