@@ -40,11 +40,7 @@ export default function Mainpage() {
             className="slide"
             id="slide1"
           >
-            <h1>
-              The latest digital manufacturing trends are aimed at connecting
-              physical and virtual factory environments to boost productivity,
-              efficiency and profitability.
-            </h1>
+            <h1>{t("section1-manufacturing")}</h1>
             <Link href="/industries/manufacturing">
               <button className="n2n-button uk-light uk-button uk-button-default uk-margin-large-top">
                 See how
@@ -61,7 +57,7 @@ export default function Mainpage() {
             className="slide"
             id="slide2"
           >
-            <h1>Using AI to accelerate Digital Transformation at Utilities</h1>
+            <h1>{t("section1-utilities")}</h1>
             <Link href="/industries/utilities">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
                 See how
@@ -78,10 +74,7 @@ export default function Mainpage() {
             className="slide"
             id="slide3"
           >
-            <h1>
-              Overcoming Digitization Challenges in the Oil and Gas Industry -
-              Oil and Gas Industry Transforming Itself with the Help of AI
-            </h1>
+            <h1>{t("section1-oil-and-gas")}</h1>
             <Link href="/industries/oil-and-gas">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
                 See how
@@ -98,7 +91,7 @@ export default function Mainpage() {
             className="slide"
             id="slide4"
           >
-            <h1>AI-bank of the future: How can banks meet the AI challenge?</h1>
+            <h1>{t("section1-banking")}</h1>
             <Link href="/industries/banking">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
                 See how
@@ -115,10 +108,7 @@ export default function Mainpage() {
             className="slide"
             id="slide5"
           >
-            <h1>
-              Transforming healthcare with AI: The impact on the workforce and
-              organizations
-            </h1>
+            <h1>{t("section1-healthcare")}</h1>
             <Link href="/industries/healthcare">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
                 See how
@@ -135,7 +125,7 @@ export default function Mainpage() {
             className="slide"
             id="slide6"
           >
-            <h1>How AI and Robotics will disrupt the Defense industry?</h1>
+            <h1>{t("section1-defense")}</h1>
             <Link href="/industries/defense">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
                 See how
@@ -152,7 +142,7 @@ export default function Mainpage() {
             className="slide"
             id="slide7"
           >
-            <h1>Artificial intelligence in retail: Scale at speed</h1>
+            <h1>{t("section1-retail")}</h1>
             <Link href="/industries/retail">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
                 See how
@@ -169,7 +159,7 @@ export default function Mainpage() {
             className="slide"
             id="slide8"
           >
-            <h1>The Role of AI and Big Data in Modern-Day Logistics</h1>
+            <h1>{t("section1-transportation")}</h1>
             <Link href="/industries/transportation">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
                 See more
@@ -186,7 +176,7 @@ export default function Mainpage() {
             className="slide"
             id="slide9"
           >
-            <h1>How to embark on becoming a smart digital city of tomorrow</h1>
+            <h1>{t("section1-smart-cities")}</h1>
             <Link href="/industries/smart-cities">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
                 See how
@@ -203,9 +193,7 @@ export default function Mainpage() {
             className="slide"
             id="slide10"
           >
-            <h1>
-              Impact of Artificial Intelligence on the current education system
-            </h1>
+            <h1>{t("section1-education")}</h1>
             <Link href="/industries/education">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
                 See more
