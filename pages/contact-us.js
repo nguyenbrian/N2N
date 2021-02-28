@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 export default function ContactUs(props) {
   return (
     <Layout>
-      <Fullpage>
+      <Fullpage scrollOverflow={true}>
         <div className="section uk-animation-fade" id="section0">
           <div className="uk-flex uk-flex-center">
             <div className="uk-padding-large uk-width-1-2@s">
