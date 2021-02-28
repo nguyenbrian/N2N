@@ -1,6 +1,5 @@
 import Fullpage from "../components/Fullpage";
 import Layout from "../components/Layout";
-import React, { useEffect, useRef, useState } from "react";
 
 export default function ContactUs(props) {
   return (
