@@ -1,7 +1,7 @@
-import Image from "next/image";
+//import Image from "next/image";
 import Link from "next/link";
 
-export default function ResultsSection(props) {
+export default function IndustriesCard(props) {
   return (
     <div className="uk-card-small uk-card-default uk-box-shadow-hover-xlarge">
       <div className="uk-card-media-top">
