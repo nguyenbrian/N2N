@@ -1,9 +1,10 @@
-import dynamic from "next/dynamic";
+//import dynamic from "next/dynamic";
+import Mainpage from "../components/Mainpage";
 
-const NoSSRComponent = dynamic(() => import("../components/Mainpage"), {
-  ssr: false,
-});
+// const NoSSRComponent = dynamic(() => import("../components/Mainpage"), {
+//   ssr: false,
+// });
 
 export default function Home() {
-  return <NoSSRComponent />;
+  return <Mainpage />;
 }
