@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import Image from "next/image";
+//import Image from "next/image";
 import Fullpage from "../components/Fullpage";
 
 export default function Company() {
@@ -7,7 +7,10 @@ export default function Company() {
     <Layout>
       <Fullpage scrollOverflow={true}>
         <div className="section" id="section0">
-          <div className="uk-flex uk-flex-center">
+          <div
+            style={{ alignItems: "flex-start" }}
+            className="uk-flex uk-flex-center"
+          >
             <img
               width="450px"
               height="450px"
