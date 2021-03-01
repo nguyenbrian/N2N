@@ -1,5 +1,4 @@
 import IndustryPage from "../../components/IndustryPage";
-import Layout from "../../components/Layout";
 
 export default function Utilities() {
   return (
@@ -25,10 +24,10 @@ export default function Utilities() {
         business insights and optimize processes by analyzing large data sets
         quickly. Safety, regulatory and compliance-based systems can be improved
         by helping employees better monitor and control policies. Meanwhile and
-        of significant importance, digital transformation can help utilities
-        improve customer service operations and explore new business models.
-        This can enhance customer satisfaction, reduce churn and lead to new
-        products and services.
+        of significant importance, digital transformation services provided by
+        N2N.ai can help utilities improve customer service operations and
+        explore new business models. This can enhance customer satisfaction,
+        reduce churn and lead to new products and services.
       </p>
     </IndustryPage>
   );

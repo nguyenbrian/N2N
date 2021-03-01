@@ -1,5 +1,4 @@
 //import Image from "next/image";
-import Link from "next/link";
 
 export default function PartnerCard(props) {
   return (
@@ -23,14 +22,15 @@ export default function PartnerCard(props) {
         <div className="uk-card-body">
           <h1 className="uk-card-title">{props.title}</h1>
           {/* <p>{props.body}</p> */}
-          <Link href={props.link}>
-            <button
-              className="n2n-button uk-button uk-button-default"
-              type="button"
-            >
-              Learn more
-            </button>
-          </Link>
+          <button
+            className="n2n-button uk-button uk-button-default"
+            type="button"
+            onClick={() => {
+              window.open(props.link);
+            }}
+          >
+            Learn more
+          </button>
         </div>
       </div>
     </div>

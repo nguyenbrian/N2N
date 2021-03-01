@@ -7,8 +7,12 @@ export default function Manufacturing() {
       src="/images/article_manufacturing.jpg"
       title="Manufacturing"
       tagline="AI – The driving force of your industry digital transformation"
-      lead="The latest digital manufacturing trends are aimed at connecting physical and virtual factory environments to boost productivity, efficiency and profitability."
     >
+      <p className="uk-text-lead">
+        The latest digital manufacturing trends are aimed at connecting physical
+        and virtual factory environments to boost productivity, efficiency and
+        profitability.
+      </p>
       <p>
         Evolution of the manufacturing industry can be seen with the
         implementation of <b>Artificial Intelligence and Robotics</b>. This is
@@ -27,9 +31,9 @@ export default function Manufacturing() {
         AI is the reason behind evolution in the manufacturing industry. They
         are making production decisions smarter and instant. Nowadays people
         prefer customized products over costly industrially produced products. 
-        <b>With the help of AI, labor cost can be minimized</b>. AI is the next
-        step after robotics for improving productivity and minimization of cost
-        of production. The main causes behind the logical evolution of
+        <b>With the help of N2N.ai, labor cost can be minimized</b>. AI is the
+        next step after robotics for improving productivity and minimization of
+        cost of production. The main causes behind the logical evolution of
         industries are poor demand and capacity planning, unsafe workplaces i.e.
         workers are exposed to essential harmful products used in factories,
         inefficiency, longer and costlier production etc.
