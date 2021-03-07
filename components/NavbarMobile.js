@@ -1,7 +1,10 @@
 import Link from "next/link";
 import LanguageSelect from "./LanguageSelect";
+import { useTranslation } from "next-i18next";
 
 export default function NavbarMobile(props) {
+  const { t } = useTranslation("common");
+
   return (
     //uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar"
     <div>
@@ -71,90 +74,90 @@ export default function NavbarMobile(props) {
               >
                 <li>
                   <Link href="/enterprise-ai">
-                    <a>Enterprise AI</a>
+                    <a>{t("enterprise-ai")}</a>
                   </Link>
                 </li>
                 <li className="uk-parent">
                   <Link href="/industries">
-                    <a>Industries</a>
+                    <a>{t("industries")}</a>
                   </Link>
                   <ul className="uk-nav-sub">
                     <li>
                       <Link href="/industries/manufacturing">
-                        <a>Manufacturing</a>
+                        <a>{t("manufacturing")}</a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/industries/utilities">
-                        <a>Utilities</a>
+                        <a>{t("utilities")}</a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/industries/oil-and-gas">
-                        <a>Oil & Gas</a>
+                        <a>{t("oil-and-gas")}</a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/industries/banking">
-                        <a>Banking</a>
+                        <a>{t("banking")}</a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/industries/healthcare">
-                        <a>Healthcare</a>
+                        <a>{t("healthcare")}</a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/industries/defense">
-                        <a>Defence</a>
+                        <a>{t("defense")}</a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/industries/retail">
-                        <a>Retail</a>
+                        <a>{t("retail")}</a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/industries/transportation">
-                        <a>Transportation</a>
+                        <a>{t("transportation")}</a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/industries/smart-cities">
-                        <a>Smart Cities</a>
+                        <a>{t("smart-cities")}</a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/industries/education">
-                        <a>Education</a>
+                        <a>{t("education")}</a>
                       </Link>
                     </li>
                     <li>
                       <Link href="/industries">
-                        <a>All</a>
+                        <a>{t("all")}</a>
                       </Link>
                     </li>
                   </ul>
                 </li>
                 <li>
                   <Link href="/partners">
-                    <a>Partners</a>
+                    <a>{t("partners")}</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/careers">
-                    <a>Careers</a>
+                    <a>{t("careers")}</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/company">
-                    <a>Company</a>
+                    <a>{t("company")}</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/results">
                     <button className="uk-button uk-button-default uk-dark n2n-button uk-margin-large-top">
-                      Get started
+                      {t("get-started")}
                     </button>
                   </Link>
                 </li>

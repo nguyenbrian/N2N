@@ -2,7 +2,18 @@ import Layout from "../components/Layout";
 import Fullpage from "../components/Fullpage";
 import PartnerCard from "../components/PartnerCard";
 
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common", "partners"])),
+  },
+});
+
 export default function Partners() {
+  const { t } = useTranslation(["partners", "common"]);
+
   const partners = [
     {
       name: "Macquarie University",
@@ -83,8 +94,8 @@ export default function Partners() {
           id="section0"
         >
           <div className="uk-padding">
-            <h1 className="uk-heading-medium">Partners</h1>
-            <h2>Partnering to Deliver Customer Success</h2>
+            <h1 className="uk-heading-medium">{t("section0-h1")}</h1>
+            <h2>{t("section0-p")}</h2>
           </div>
         </div>
         <div className="section content" id="section1">

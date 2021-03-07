@@ -1,7 +1,9 @@
 //import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 
 export default function IndustriesCard(props) {
+  const { t } = useTranslation("common");
   return (
     <div className="uk-card-small uk-card-default uk-box-shadow-hover-xlarge">
       <div className="uk-card-media-top">
@@ -23,7 +25,7 @@ export default function IndustriesCard(props) {
             className="n2n-button uk-button uk-button-default"
             type="button"
           >
-            Learn more
+            {t("learn-more")}
           </button>
         </Link>
       </div>

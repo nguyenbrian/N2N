@@ -1,6 +1,8 @@
-//import Image from "next/image";
+import { useTranslation } from "next-i18next";
 
 export default function PartnerCard(props) {
+  const { t } = useTranslation("common");
+
   return (
     <div>
       <div className="uk-card-small uk-card-default uk-box-shadow-hover-xlarge">
@@ -29,7 +31,7 @@ export default function PartnerCard(props) {
               window.open(props.link);
             }}
           >
-            Learn more
+            {t("learn-more")}
           </button>
         </div>
       </div>

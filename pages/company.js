@@ -1,9 +1,18 @@
 import Layout from "../components/Layout";
-//import Image from "next/image";
 import Fullpage from "../components/Fullpage";
 import HalfImage from "../components/HalfImage";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common", "company"])),
+  },
+});
 
 export default function Company() {
+  const { t } = useTranslation("company");
+
   return (
     <Layout>
       <Fullpage scrollOverflow={true}>
@@ -22,29 +31,14 @@ export default function Company() {
         </div>
         <div className="section content" id="section1">
           <HalfImage variant="left" src="images/company.jpg">
-            <h1>What we are</h1>
-            <p>
-              N2N.ai is a leading complete enterprise AI solutions and services
-              provider for accelerating digital transformation. Founded in
-              Sydney - Australia, N2N.ai provides industry-led comprehensive
-              services to build enterprise-scale AI applications more
-              efficiently and cost-effectively than alternative approaches.
-            </p>
+            <h1>{t("section0-h1")}</h1>
+            <p>{t("section0-p")}</p>
           </HalfImage>
         </div>
         <div className="section content" id="section2">
           <HalfImage variant="right" src="images/company2.jpg">
-            <h1>Our mission</h1>
-            <p>
-              Our mission is to continuously innovate and commercialise complete
-              enterprise AI solutions, products and services to industry
-              partners worldwide. Working closely with world-class academic
-              researchers, N2N.ai supports the value chain in any industry with
-              prototype, configurable and scalable, high-value AI applications
-              for predictive maintenance, fraud detection, sensor network
-              health, supply network optimization, energy management, anti-money
-              laundering and customer engagement.
-            </p>
+            <h1>{t("section1-h1")}</h1>
+            <p>{t("section1-p")}</p>
           </HalfImage>
         </div>
       </Fullpage>

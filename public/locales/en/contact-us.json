@@ -1,0 +1,16 @@
+{
+  "contact-us": "Contact us",
+  "name": "Name",
+  "name-placeholder": "Type your name",
+  "title": "Job title",
+  "title-placeholder": "Enter your job title",
+  "mail": "Email address",
+  "mail-placeholder": "Type your email",
+  "number": "Phone number",
+  "number-placeholder": "Enter your phone number",
+  "company": "Company name",
+  "company-placeholder": "Enter your company's name",
+  "msg": "How can we help?",
+  "msg-placeholder": "List your interest/s",
+  "submit": "Submit"
+}

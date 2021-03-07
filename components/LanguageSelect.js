@@ -1,7 +1,9 @@
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 
 export default function LanguageSelect(props) {
   const router = useRouter();
+  const { t } = useTranslation("common");
 
   const options = [
     {
@@ -32,7 +34,7 @@ export default function LanguageSelect(props) {
         }
         uk-dropdown={`mode: hover; pos: ${props.pos}; offset: ${props.offset}`}
       >
-        <p className="uk-margin-small-bottom">Choose a language</p>
+        <p className="uk-margin-small-bottom">{t("choose-a-language")}</p>
         <select
           defaultValue={router.locale}
           id="selectedLanguage"
@@ -57,7 +59,7 @@ export default function LanguageSelect(props) {
           }}
           className="n2n-button uk-button uk-button-default uk-margin-top"
         >
-          Apply
+          {t("apply")}
         </button>
       </div>
     </div>

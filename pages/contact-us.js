@@ -1,95 +1,105 @@
 import Fullpage from "../components/Fullpage";
 import Layout from "../components/Layout";
 
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common", "contact-us"])),
+  },
+});
+
 export default function ContactUs(props) {
+  const { t } = useTranslation("contact-us");
   return (
     <Layout>
       <Fullpage scrollOverflow={true}>
         <div className="section uk-animation-fade" id="section0">
           <div className="uk-flex uk-flex-center avoid-navbar">
             <div className="uk-padding-large uk-width-1-2@s">
-              <h1>Contact us</h1>
+              <h1>{t("contact-us")}</h1>
               <form className="uk-form-stacked">
                 <div className="uk-margin">
                   <label className="uk-form-label" htmlFor="form-stacked-text">
-                    Name
+                    {t("name")}
                   </label>
                   <div className="uk-form-controls">
                     <input
                       className="uk-input"
                       id="contact-us-name"
                       type="text"
-                      placeholder="Type your name"
+                      placeholder={t("name-placeholder")}
                     />
                   </div>
                 </div>
 
                 <div className="uk-margin">
                   <label className="uk-form-label" htmlFor="form-stacked-text">
-                    Job title
+                    {t("title")}
                   </label>
                   <div className="uk-form-controls">
                     <input
                       className="uk-input"
                       id="contact-us-title"
                       type="text"
-                      placeholder="Enter your job title"
+                      placeholder={t("title-placeholder")}
                     />
                   </div>
                 </div>
 
                 <div className="uk-margin">
                   <label className="uk-form-label" htmlFor="form-stacked-text">
-                    Email address
+                    {t("mail")}
                   </label>
                   <div className="uk-form-controls">
                     <input
                       className="uk-input"
                       id="contact-us-email"
                       type="text"
-                      placeholder="Type your email"
+                      placeholder={t("mail-placeholder")}
                     />
                   </div>
                 </div>
 
                 <div className="uk-margin">
                   <label className="uk-form-label" htmlFor="form-stacked-text">
-                    Phone number
+                    {t("number")}
                   </label>
                   <div className="uk-form-controls">
                     <input
                       className="uk-input"
                       id="contact-us-phone"
                       type="text"
-                      placeholder="Enter your phone number"
+                      placeholder={t("number-placeholder")}
                     />
                   </div>
                 </div>
 
                 <div className="uk-margin">
                   <label className="uk-form-label" htmlFor="form-stacked-text">
-                    Company name
+                    {t("company")}
                   </label>
                   <div className="uk-form-controls">
                     <input
                       className="uk-input"
                       id="contact-us-company"
                       type="text"
-                      placeholder="Enter your company's name"
+                      placeholder={t("company-placeholder")}
                     />
                   </div>
                 </div>
 
                 <div className="uk-margin">
                   <label className="uk-form-label" htmlFor="form-stacked-text">
-                    How can we help?
+                    {t("msg")}
                   </label>
                   <textarea
                     style={{ resize: "none" }}
                     id="contact-us-msg"
                     className="uk-textarea uk-resize-vertical"
                     rows="5"
-                    placeholder="List your interest"
+                    placeholder={t("msg-placeholder")}
                   ></textarea>
                 </div>
 
@@ -158,7 +168,7 @@ export default function ContactUs(props) {
                         .catch((e) => {});
                     }}
                   >
-                    Submit
+                    {t("submit")}
                   </button>
                 </div>
               </form>
