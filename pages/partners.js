@@ -54,15 +54,20 @@ export default function Partners() {
     {
       name: "APICOO Robotics",
       link: "https://apicoorobotics.com/",
+      img: "images/apicoo.png",
     },
+    { name: "WESMART", link: "http://wesmart.vn/", img: "images/wesmart.png" },
+    {
+      name: "GaraSTEM",
+      link: "https://garastem.com/",
+      img: "images/garastem.png",
+    },
+    { name: "LC TECH", link: "https://lctech.vn/", img: "images/lc.png" },
+    { name: "ITDC", link: "http://itdctech-vn.com/" },
     {
       name: "OhmniLabs",
       link: "https://ohmnilabs.com/",
     },
-    { name: "WESMART", link: "http://wesmart.vn/" },
-    { name: "ITDC", link: "http://itdctech-vn.com/" },
-    { name: "GaraSTEM", link: "https://garastem.com/" },
-    { name: "LC TECH", link: "https://lctech.vn/" },
   ];
   return (
     <Layout>

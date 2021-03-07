@@ -4,20 +4,33 @@ export default function LanguageSelect(props) {
   const router = useRouter();
 
   const options = [
-    { id: "en", lang: "English" },
-    { id: "vi", lang: "Tiếng Việt" },
+    {
+      id: "en",
+      lang: "English",
+      icon: "https://www.countryflags.io/gb/flat/64.png",
+    },
+    {
+      id: "vi",
+      lang: "Tiếng Việt",
+      icon: "https://www.countryflags.io/vn/flat/64.png",
+    },
   ];
 
   return (
     <div>
-      <a uk-icon="world"></a>
+      {router.locale === "en" ? (
+        <img style={{ height: "40px" }} src={options[0].icon} />
+      ) : (
+        <img style={{ height: "40px" }} src={options[1].icon} />
+      )}
+
       <div
         className={
           props.variant === "dark"
             ? "uk-light uk-background-secondary"
             : "uk-dark uk-background-muted"
         }
-        uk-dropdown={`mode: click; pos: ${props.pos}; offset: ${props.offset}`}
+        uk-dropdown={`mode: hover; pos: ${props.pos}; offset: ${props.offset}`}
       >
         <p className="uk-margin-small-bottom">Choose a language</p>
         <select
