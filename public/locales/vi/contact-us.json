@@ -12,5 +12,6 @@
   "company-placeholder": "Nhập tên công ty của bạn",
   "msg": "Chúng tôi có thể giúp gì?",
   "msg-placeholder": "Liệt kê / các sở thích của bạn",
-  "submit": "Gửi đi"
+  "submit": "Gửi đi",
+  "required": "* Cần thiết"
 }

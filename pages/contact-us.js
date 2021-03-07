@@ -22,7 +22,10 @@ export default function ContactUs(props) {
               <form className="uk-form-stacked">
                 <div className="uk-margin">
                   <label className="uk-form-label" htmlFor="form-stacked-text">
-                    {t("name")}
+                    {t("name") + " "}
+                    <p style={{ color: "red", display: "inline" }}>
+                      {t("required")}
+                    </p>
                   </label>
                   <div className="uk-form-controls">
                     <input
@@ -50,7 +53,10 @@ export default function ContactUs(props) {
 
                 <div className="uk-margin">
                   <label className="uk-form-label" htmlFor="form-stacked-text">
-                    {t("mail")}
+                    {t("mail") + " "}
+                    <p style={{ color: "red", display: "inline" }}>
+                      {t("required")}
+                    </p>
                   </label>
                   <div className="uk-form-controls">
                     <input
@@ -92,7 +98,10 @@ export default function ContactUs(props) {
 
                 <div className="uk-margin">
                   <label className="uk-form-label" htmlFor="form-stacked-text">
-                    {t("msg")}
+                    {t("msg") + " "}
+                    <p style={{ color: "red", display: "inline" }}>
+                      {t("required")}
+                    </p>
                   </label>
                   <textarea
                     style={{ resize: "none" }}
@@ -128,44 +137,80 @@ export default function ContactUs(props) {
 
                       let msg = document.getElementById("contact-us-msg").value;
 
-                      let myHeaders = new Headers();
-                      myHeaders.append(
-                        "Content-Type",
-                        "application/x-www-form-urlencoded"
-                      );
-                      // myHeaders.append(
-                      //   "Cookie",
-                      //   "S=spreadsheet_forms=UnfjNtnYOktGOex6da-9AYi8eGe6Gr67hetNuLA7HAE; NID=210=J-q73wMELgMDjD2hXIUaYZ3jHIbnCzsNv0GzKvDPzppfMyGW5YFUA19A-6W2u_uixkEEspLxQir9utUlFxLMsxlN36FSktB3Wr6pazuI75USsrnzOyeUzAljqsaFT2aZ28d5D-pwi7aW56BQFueqLw1NXj7Nov5KSJt-B9BVEvk"
-                      // );
-
-                      let urlencoded = new URLSearchParams();
-                      urlencoded.append("entry.170303827", name);
-                      urlencoded.append("entry.975948400", jobTitle);
-                      urlencoded.append("entry.1876911322", emailAddr);
-                      urlencoded.append("entry.915376698", phoneNo);
-                      urlencoded.append("entry.1511638443", companyName);
-                      urlencoded.append("entry.135035489", msg);
-
-                      let requestOptions = {
-                        method: "POST",
-                        headers: myHeaders,
-                        body: urlencoded,
-                        redirect: "follow",
-                        mode: "no-cors",
+                      let errors = {
+                        "contact-us-name": false,
+                        "contact-us-email": false,
+                        "contact-us-msg": false,
                       };
+                      if (name === "") {
+                        errors["contact-us-name"] = true;
+                      }
 
-                      fetch(
-                        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdzesy9x88D2mAOVAMHme5KLOOhsr-W3alv8qDZGRCKTSMe3A/formResponse",
-                        requestOptions
-                      )
-                        .then((r) => {
-                          const uikit = require("uikit");
-                          uikit.notification({
-                            message: "Your response was successfully sent",
-                            status: "success",
-                          });
-                        })
-                        .catch((e) => {});
+                      if (emailAddr === "") {
+                        errors["contact-us-email"] = true;
+                      }
+
+                      if (msg === "") {
+                        errors["contact-us-msg"] = true;
+                      }
+
+                      let hasErrors = false;
+
+                      Object.keys(errors).forEach((i) => {
+                        if (errors[i] === true) {
+                          hasErrors = true;
+                          document
+                            .getElementById(i)
+                            .classList.add("uk-form-danger");
+                        } else {
+                          document
+                            .getElementById(i)
+                            .classList.remove("uk-form-danger");
+                        }
+                      });
+
+                      if (hasErrors) {
+                        return;
+                      }
+
+                      // let myHeaders = new Headers();
+                      // myHeaders.append(
+                      //   "Content-Type",
+                      //   "application/x-www-form-urlencoded"
+                      // );
+                      // // myHeaders.append(
+                      // //   "Cookie",
+                      // //   "S=spreadsheet_forms=UnfjNtnYOktGOex6da-9AYi8eGe6Gr67hetNuLA7HAE; NID=210=J-q73wMELgMDjD2hXIUaYZ3jHIbnCzsNv0GzKvDPzppfMyGW5YFUA19A-6W2u_uixkEEspLxQir9utUlFxLMsxlN36FSktB3Wr6pazuI75USsrnzOyeUzAljqsaFT2aZ28d5D-pwi7aW56BQFueqLw1NXj7Nov5KSJt-B9BVEvk"
+                      // // );
+
+                      // let urlencoded = new URLSearchParams();
+                      // urlencoded.append("entry.170303827", name);
+                      // urlencoded.append("entry.975948400", jobTitle);
+                      // urlencoded.append("entry.1876911322", emailAddr);
+                      // urlencoded.append("entry.915376698", phoneNo);
+                      // urlencoded.append("entry.1511638443", companyName);
+                      // urlencoded.append("entry.135035489", msg);
+
+                      // let requestOptions = {
+                      //   method: "POST",
+                      //   headers: myHeaders,
+                      //   body: urlencoded,
+                      //   redirect: "follow",
+                      //   mode: "no-cors",
+                      // };
+
+                      // fetch(
+                      //   "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdzesy9x88D2mAOVAMHme5KLOOhsr-W3alv8qDZGRCKTSMe3A/formResponse",
+                      //   requestOptions
+                      // )
+                      //   .then((r) => {
+                      //     const uikit = require("uikit");
+                      //     uikit.notification({
+                      //       message: "Your response was successfully sent",
+                      //       status: "success",
+                      //     });
+                      //   })
+                      //   .catch((e) => {});
                     }}
                   >
                     {t("submit")}

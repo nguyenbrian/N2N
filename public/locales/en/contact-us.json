@@ -12,5 +12,6 @@
   "company-placeholder": "Enter your company's name",
   "msg": "How can we help?",
   "msg-placeholder": "List your interest/s",
-  "submit": "Submit"
+  "submit": "Submit",
+  "required": "* Required"
 }
