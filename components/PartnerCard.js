@@ -1,7 +1,8 @@
-//import Image from "next/image";
-import Link from "next/link";
+import { useTranslation } from "next-i18next";
 
 export default function PartnerCard(props) {
+  const { t } = useTranslation("common");
+
   return (
     <div>
       <div className="uk-card-small uk-card-default uk-box-shadow-hover-xlarge">
@@ -23,14 +24,15 @@ export default function PartnerCard(props) {
         <div className="uk-card-body">
           <h1 className="uk-card-title">{props.title}</h1>
           {/* <p>{props.body}</p> */}
-          <Link href={props.link}>
-            <button
-              className="n2n-button uk-button uk-button-default"
-              type="button"
-            >
-              Learn more
-            </button>
-          </Link>
+          <button
+            className="n2n-button uk-button uk-button-default"
+            type="button"
+            onClick={() => {
+              window.open(props.link);
+            }}
+          >
+            {t("learn-more")}
+          </button>
         </div>
       </div>
     </div>

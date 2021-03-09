@@ -2,8 +2,11 @@ import Fullpage from "../components/Fullpage";
 import Layout from "../components/Layout";
 import Link from "next/link";
 import ResultsSection from "../components/ResultsSection";
+import { useTranslation } from "next-i18next";
 
 export default function Mainpage() {
+  const { t } = useTranslation(["index", "common", "results"]);
+
   return (
     <Layout>
       <Fullpage
@@ -22,10 +25,8 @@ export default function Mainpage() {
           id="section0"
         >
           <div className="uk-padding">
-            <h1 className="uk-heading-medium">
-              This is Complete Enterprise AI.
-            </h1>
-            <h2>Transforming your future business. Now.</h2>
+            <h1 className="uk-heading-medium">{t("section0-h1")}</h1>
+            <h2>{t("section0-h2")}</h2>
           </div>
         </div>
         <div className="section frontpage uk-light" id="section2">
@@ -39,14 +40,10 @@ export default function Mainpage() {
             className="slide"
             id="slide1"
           >
-            <h1>
-              The latest digital manufacturing trends are aimed at connecting
-              physical and virtual factory environments to boost productivity,
-              efficiency and profitability.
-            </h1>
+            <h1>{t("section1-manufacturing")}</h1>
             <Link href="/industries/manufacturing">
               <button className="n2n-button uk-light uk-button uk-button-default uk-margin-large-top">
-                See how
+                {t("see-how")}
               </button>
             </Link>
           </div>
@@ -60,10 +57,10 @@ export default function Mainpage() {
             className="slide"
             id="slide2"
           >
-            <h1>Using AI to accelerate Digital Transformation at Utilities</h1>
+            <h1>{t("section1-utilities")}</h1>
             <Link href="/industries/utilities">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
-                See how
+                {t("see-how")}
               </button>
             </Link>
           </div>
@@ -77,13 +74,10 @@ export default function Mainpage() {
             className="slide"
             id="slide3"
           >
-            <h1>
-              Overcoming Digitization Challenges in the Oil and Gas Industry -
-              Oil and Gas Industry Transforming Itself with the Help of AI
-            </h1>
+            <h1>{t("section1-oil-and-gas")}</h1>
             <Link href="/industries/oil-and-gas">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
-                See how
+                {t("see-how")}
               </button>
             </Link>
           </div>
@@ -97,10 +91,10 @@ export default function Mainpage() {
             className="slide"
             id="slide4"
           >
-            <h1>AI-bank of the future: How can banks meet the AI challenge?</h1>
+            <h1>{t("section1-banking")}</h1>
             <Link href="/industries/banking">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
-                See how
+                {t("see-how")}
               </button>
             </Link>
           </div>
@@ -114,13 +108,10 @@ export default function Mainpage() {
             className="slide"
             id="slide5"
           >
-            <h1>
-              Transforming healthcare with AI: The impact on the workforce and
-              organizations
-            </h1>
+            <h1>{t("section1-healthcare")}</h1>
             <Link href="/industries/healthcare">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
-                See how
+                {t("see-how")}
               </button>
             </Link>
           </div>
@@ -134,10 +125,10 @@ export default function Mainpage() {
             className="slide"
             id="slide6"
           >
-            <h1>How AI and Robotics will disrupt the Defense industry?</h1>
+            <h1>{t("section1-defense")}</h1>
             <Link href="/industries/defense">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
-                See how
+                {t("see-how")}
               </button>
             </Link>
           </div>
@@ -151,10 +142,10 @@ export default function Mainpage() {
             className="slide"
             id="slide7"
           >
-            <h1>Artificial intelligence in retail: Scale at speed</h1>
+            <h1>{t("section1-retail")}</h1>
             <Link href="/industries/retail">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
-                See how
+                {t("see-how")}
               </button>
             </Link>
           </div>
@@ -168,7 +159,7 @@ export default function Mainpage() {
             className="slide"
             id="slide8"
           >
-            <h1>The Role of AI and Big Data in Modern-Day Logistics</h1>
+            <h1>{t("section1-transportation")}</h1>
             <Link href="/industries/transportation">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
                 See more
@@ -185,10 +176,10 @@ export default function Mainpage() {
             className="slide"
             id="slide9"
           >
-            <h1>How to embark on becoming a smart digital city of tomorrow</h1>
+            <h1>{t("section1-smart-cities")}</h1>
             <Link href="/industries/smart-cities">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
-                See how
+                {t("see-how")}
               </button>
             </Link>
           </div>
@@ -202,9 +193,7 @@ export default function Mainpage() {
             className="slide"
             id="slide10"
           >
-            <h1>
-              Impact of Artificial Intelligence on the current education system
-            </h1>
+            <h1>{t("section1-education")}</h1>
             <Link href="/industries/education">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
                 See more
@@ -226,160 +215,116 @@ export default function Mainpage() {
                     uk-tab="connect: #component-tab-left; animation: uk-animation-fade"
                   >
                     <li>
-                      <a>Manufacturing</a>
+                      <a>{t("common:manufacturing")}</a>
                     </li>
                     <li>
-                      <a>Utilities</a>
+                      <a>{t("common:utilities")}</a>
                     </li>
                     <li>
-                      <a>Oil & Gas</a>
+                      <a>{t("common:oil-and-gas")}</a>
                     </li>
                     <li>
-                      <a>Banking</a>
+                      <a>{t("common:banking")}</a>
                     </li>
                     <li>
-                      <a>Healthcare</a>
+                      <a>{t("common:healthcare")}</a>
                     </li>
                     <li>
-                      <a>Defense</a>
+                      <a>{t("common:defense")}</a>
                     </li>
                     <li>
-                      <a>Retail</a>
+                      <a>{t("common:retail")}</a>
                     </li>
                     <li>
-                      <a>Transportation</a>
+                      <a>{t("common:transportation")}</a>
                     </li>
                     <li>
-                      <a>Smart Cities</a>
+                      <a>{t("common:smart-cities")}</a>
                     </li>
                     <li>
-                      <a>Education</a>
+                      <a>{t("common:education")}</a>
                     </li>
                   </ul>
                 </div>
                 <div className="uk-width-expand@m">
                   <ul id="component-tab-left" className="uk-switcher">
                     <li>
-                      <p>
-                        Evolution of the manufacturing industry can be seen with
-                        the implementation of 
-                        <b>Artificial Intelligence and Robotics</b>. This is to
-                        minimize the human workforce while improve efficiency
-                        and simplify the whole manufacturing system.
-                      </p>
+                      <p>{t("section2-manufacturing")}</p>
                       <Link href="/industries/manufacturing">
                         <button className="n2n-button uk-button uk-button-default uk-light">
-                          More
+                          {t("more")}
                         </button>
                       </Link>
                     </li>
                     <li>
-                      <p>
-                        Digital transformation in the utilities sector is the
-                        process of adopting new digital ways of working, often
-                        with a business goal for utilities to reinvent
-                        themselves.
-                      </p>
+                      <p>{t("section2-utilities")}</p>
                       <Link href="/industries/utilities">
                         <button className="n2n-button uk-button uk-button-default uk-light">
-                          More
+                          {t("more")}
                         </button>
                       </Link>
                     </li>
                     <li>
-                      <p>
-                        In the oil and gas industry, digitalization is improving
-                        project economics and streamlining operations, with AI
-                        as the key for sustainable growth and security against
-                        cyberthreats.
-                      </p>
+                      <p>{t("section2-oil-and-gas")}</p>
                       <Link href="/industries/oil-and-gas">
                         <button className="n2n-button uk-button uk-button-default uk-light">
-                          More
+                          {t("more")}
                         </button>
                       </Link>
                     </li>
                     <li>
-                      <p>
-                        Artificial intelligence technologies are increasingly
-                        integral to the world we live in, and banks need to
-                        deploy these technologies at scale to remain relevant.
-                      </p>
+                      <p>{t("section2-banking")}</p>
                       <Link href="/industries/banking">
                         <button className="n2n-button uk-button uk-button-default uk-light">
-                          More
+                          {t("more")}
                         </button>
                       </Link>
                     </li>
                     <li>
-                      <p>
-                        Technology is transforming the way people bank, travel
-                        and shop. But, it has yet to make significant inroads
-                        into the healthcare industry.
-                      </p>
+                      <p>{t("section2-healthcare")}</p>
                       <Link href="/industries/healthcare">
                         <button className="n2n-button uk-button uk-button-default uk-light">
-                          More
+                          {t("more")}
                         </button>
                       </Link>
                     </li>
                     <li>
-                      <p>
-                        The rise of digital platforms is empowering the
-                        military, enabling better continuity of operations and
-                        bringing armed forces at a new level of combat
-                        readiness.
-                      </p>
+                      <p>{t("section2-defense")}</p>
                       <Link href="/industries/defense">
                         <button className="n2n-button uk-button uk-button-default uk-light">
-                          More
+                          {t("more")}
                         </button>
                       </Link>
                     </li>
                     <li>
-                      <p>
-                        Transformation in retail was already underway before the
-                        pandemic and is now accelerating, powered by data and
-                        AI.
-                      </p>
+                      <p>{t("section2-retail")}</p>
                       <Link href="/industries/retail">
                         <button className="n2n-button uk-button uk-button-default uk-light">
-                          More
+                          {t("more")}
                         </button>
                       </Link>
                     </li>
                     <li>
-                      <p>
-                        Industry 4.0 - one of the biggest disruptors to
-                        traditional freight and logistics, is transforming the
-                        way in which the industry continues to do business.
-                      </p>
+                      <p>{t("section2-transportation")}</p>
                       <Link href="/industries/transportation">
                         <button className="n2n-button uk-button uk-button-default uk-light">
-                          More
+                          {t("more")}
                         </button>
                       </Link>
                     </li>
                     <li>
-                      <p>
-                        The recent growth in digital technologies is enabling
-                        cities to undergo transformations for streamlining smart
-                        services and offering new products.
-                      </p>
+                      <p>{t("section2-smart-cities")}</p>
                       <Link href="/industries/smart-cities">
                         <button className="n2n-button uk-button uk-button-default uk-light">
-                          More
+                          {t("more")}
                         </button>
                       </Link>
                     </li>
                     <li>
-                      <p>
-                        Educators from all grade-levels are coming to realize
-                        the benefits of technology in the classroom.
-                      </p>
+                      <p>{t("section2-education")}</p>
                       <Link href="/industries/education">
                         <button className="n2n-button uk-button uk-button-default uk-light">
-                          More
+                          {t("more")}
                         </button>
                       </Link>
                     </li>

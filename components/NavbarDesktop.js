@@ -1,6 +1,10 @@
 import Link from "next/link";
+import LanguageSelect from "./LanguageSelect";
+import { useTranslation } from "next-i18next";
 
 export default function NavbarDesktop(props) {
+  const { t } = useTranslation("common");
+
   return (
     //uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar"
     <div>
@@ -33,15 +37,17 @@ export default function NavbarDesktop(props) {
           <ul className="uk-navbar-nav">
             <li>
               <Link href="/enterprise-ai">
-                <a className="n2n-navbar">Enterprise AI</a>
+                <a className="n2n-navbar">{t("enterprise-ai")}</a>
               </Link>
             </li>
             <li>
               <Link href="/industries">
-                <a className="n2n-navbar">Industries</a>
+                <a className="n2n-navbar">{t("industries")}</a>
               </Link>
               <div className="uk-navbar-dropdown uk-navbar-dropdown-width-3">
-                <p className="uk-nav-header uk-margin-remove">Industries</p>
+                <p className="uk-nav-header uk-margin-remove">
+                  {t("industries")}
+                </p>
                 <div
                   className="uk-navbar-dropdown-grid uk-child-width-1-2"
                   uk-grid="true"
@@ -51,30 +57,30 @@ export default function NavbarDesktop(props) {
                       <ul className="uk-nav uk-navbar-dropdown-nav">
                         <li>
                           <Link href="/industries/manufacturing">
-                            <a className="n2n-navbar">Manufacturing</a>
+                            <a className="n2n-navbar">{t("manufacturing")}</a>
                           </Link>
                         </li>
                         {/* <li className="uk-nav-divider"></li> */}
                         <li>
                           <Link href="/industries/utilities">
-                            <a className="n2n-navbar">Utilities</a>
+                            <a className="n2n-navbar">{t("utilities")}</a>
                           </Link>
                         </li>
                         {/* <li className="uk-nav-divider"></li> */}
                         <li>
                           <Link href="/industries/oil-and-gas">
-                            <a className="n2n-navbar">Oil & Gas</a>
+                            <a className="n2n-navbar">{t("oil-and-gas")}</a>
                           </Link>
                         </li>
                         <li>
                           <Link href="/industries/banking">
-                            <a className="n2n-navbar">Banking</a>
+                            <a className="n2n-navbar">{t("banking")}</a>
                           </Link>
                         </li>
                         {/* <li className="uk-nav-divider"></li> */}
                         <li>
                           <Link href="/industries/healthcare">
-                            <a className="n2n-navbar">Healthcare</a>
+                            <a className="n2n-navbar">{t("healthcare")}</a>
                           </Link>
                         </li>
                       </ul>
@@ -85,30 +91,30 @@ export default function NavbarDesktop(props) {
                       {/* <li className="uk-nav-divider"></li> */}
                       <li>
                         <Link href="/industries/defense">
-                          <a className="n2n-navbar">Defense</a>
+                          <a className="n2n-navbar">{t("defense")}</a>
                         </Link>
                       </li>
                       <li>
                         <Link href="/industries/retail">
-                          <a className="n2n-navbar">Retail</a>
+                          <a className="n2n-navbar">{t("retail")}</a>
                         </Link>
                       </li>
                       {/* <li className="uk-nav-divider"></li> */}
                       <li>
                         <Link href="/industries/transportation">
-                          <a className="n2n-navbar">Transportation</a>
+                          <a className="n2n-navbar">{t("transportation")}</a>
                         </Link>
                       </li>
                       {/* <li className="uk-nav-divider"></li> */}
                       <li>
                         <Link href="/industries/smart-cities">
-                          <a className="n2n-navbar">Smart Cities</a>
+                          <a className="n2n-navbar">{t("smart-cities")}</a>
                         </Link>
                       </li>
                       {/* <li className="uk-nav-divider"></li> */}
                       <li>
                         <Link href="/industries/education">
-                          <a className="n2n-navbar">Education</a>
+                          <a className="n2n-navbar">{t("education")}</a>
                         </Link>
                       </li>
                     </ul>
@@ -118,17 +124,17 @@ export default function NavbarDesktop(props) {
             </li>
             <li>
               <Link href="/partners">
-                <a className="n2n-navbar">Partners</a>
+                <a className="n2n-navbar">{t("partners")}</a>
               </Link>
             </li>
             <li>
               <Link href="/careers">
-                <a className="n2n-navbar">Careers</a>
+                <a className="n2n-navbar">{t("careers")}</a>
               </Link>
             </li>
             <li>
               <Link href="/company">
-                <a className="n2n-navbar">Company</a>
+                <a className="n2n-navbar">{t("company")}</a>
               </Link>
             </li>
             {/* <li>
@@ -139,20 +145,13 @@ export default function NavbarDesktop(props) {
           <div className="uk-navbar-item">
             <Link href="/results">
               <button className="n2n-button uk-button uk-button-default">
-                Get Started
+                {t("get-started")}
               </button>
             </Link>
           </div>
-          {/*<div className="uk-navbar-item">
-            <a uk-icon="world"></a>
-            <div uk-dropdown="mode: click; pos: bottom-right; offset: 45">
-              <p className="uk-margin-small-bottom">Choose a language</p>
-              <select className="uk-select">
-                <option>English</option>
-                <option>Vietnamese</option>
-              </select>
-            </div>
-          </div> */}
+          <div className="uk-navbar-item">
+            <LanguageSelect variant="light" pos="bottom-right" offset="45" />
+          </div>
         </div>
       </nav>
     </div>

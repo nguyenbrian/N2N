@@ -13,6 +13,7 @@ export default function Fullpage(props) {
       scrollOverflow={props.scrollOverflow}
       anchors={props.anchors !== undefined ? props.anchors : []}
       sectionsColor={props.sectionsColor}
+      // navigation
       render={({ state, fullpageApi }) => {
         return (
           <ReactFullpage.Wrapper>

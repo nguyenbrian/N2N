@@ -1,7 +1,10 @@
+import { useTranslation } from "next-i18next";
+
 export default function ContactDetails(props) {
+  const { t } = useTranslation("common");
   return (
     <div>
-      <h1>Contact</h1>
+      <h1>{t("contact")}</h1>
       <p className="uk-margin-remove">
         <span className="uk-margin-small-right" uk-icon="mail" />
         E: contact@n2n.ai
@@ -11,7 +14,7 @@ export default function ContactDetails(props) {
         href="mailto:contact@n2n.ai"
       >
         <span className="uk-margin-right" uk-icon="mail" />
-        Open email
+        {t("open-email")}
       </a>
       {/* <div className="uk-button-group uk-margin-top">
         <a

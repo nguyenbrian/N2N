@@ -1,12 +1,13 @@
 import UIKit from "../components/UIKit";
 import "../styles/globals.css";
+import { appWithTranslation } from "next-i18next";
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
   return (
     <UIKit>
       <Component {...pageProps} />
     </UIKit>
   );
-}
+};
 
-export default MyApp;
+export default appWithTranslation(MyApp);

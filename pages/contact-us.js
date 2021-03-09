@@ -1,95 +1,114 @@
 import Fullpage from "../components/Fullpage";
 import Layout from "../components/Layout";
 
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
+
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common", "contact-us"])),
+  },
+});
+
 export default function ContactUs(props) {
+  const { t } = useTranslation("contact-us");
   return (
     <Layout>
       <Fullpage scrollOverflow={true}>
         <div className="section uk-animation-fade" id="section0">
           <div className="uk-flex uk-flex-center avoid-navbar">
             <div className="uk-padding-large uk-width-1-2@s">
-              <h1>Contact us</h1>
+              <h1>{t("contact-us")}</h1>
               <form className="uk-form-stacked">
                 <div className="uk-margin">
                   <label className="uk-form-label" htmlFor="form-stacked-text">
-                    Name
+                    {t("name") + " "}
+                    <p style={{ color: "red", display: "inline" }}>
+                      {t("required")}
+                    </p>
                   </label>
                   <div className="uk-form-controls">
                     <input
                       className="uk-input"
                       id="contact-us-name"
                       type="text"
-                      placeholder="Type your name"
+                      placeholder={t("name-placeholder")}
                     />
                   </div>
                 </div>
 
                 <div className="uk-margin">
                   <label className="uk-form-label" htmlFor="form-stacked-text">
-                    Job title
+                    {t("title")}
                   </label>
                   <div className="uk-form-controls">
                     <input
                       className="uk-input"
                       id="contact-us-title"
                       type="text"
-                      placeholder="Enter your job title"
+                      placeholder={t("title-placeholder")}
                     />
                   </div>
                 </div>
 
                 <div className="uk-margin">
                   <label className="uk-form-label" htmlFor="form-stacked-text">
-                    Email address
+                    {t("mail") + " "}
+                    <p style={{ color: "red", display: "inline" }}>
+                      {t("required")}
+                    </p>
                   </label>
                   <div className="uk-form-controls">
                     <input
                       className="uk-input"
                       id="contact-us-email"
                       type="text"
-                      placeholder="Type your email"
+                      placeholder={t("mail-placeholder")}
                     />
                   </div>
                 </div>
 
                 <div className="uk-margin">
                   <label className="uk-form-label" htmlFor="form-stacked-text">
-                    Phone number
+                    {t("number")}
                   </label>
                   <div className="uk-form-controls">
                     <input
                       className="uk-input"
                       id="contact-us-phone"
                       type="text"
-                      placeholder="Enter your phone number"
+                      placeholder={t("number-placeholder")}
                     />
                   </div>
                 </div>
 
                 <div className="uk-margin">
                   <label className="uk-form-label" htmlFor="form-stacked-text">
-                    Company name
+                    {t("company")}
                   </label>
                   <div className="uk-form-controls">
                     <input
                       className="uk-input"
                       id="contact-us-company"
                       type="text"
-                      placeholder="Enter your company's name"
+                      placeholder={t("company-placeholder")}
                     />
                   </div>
                 </div>
 
                 <div className="uk-margin">
                   <label className="uk-form-label" htmlFor="form-stacked-text">
-                    How can we help?
+                    {t("msg") + " "}
+                    <p style={{ color: "red", display: "inline" }}>
+                      {t("required")}
+                    </p>
                   </label>
                   <textarea
                     style={{ resize: "none" }}
                     id="contact-us-msg"
                     className="uk-textarea uk-resize-vertical"
                     rows="5"
-                    placeholder="List your interest"
+                    placeholder={t("msg-placeholder")}
                   ></textarea>
                 </div>
 
@@ -118,47 +137,83 @@ export default function ContactUs(props) {
 
                       let msg = document.getElementById("contact-us-msg").value;
 
-                      let myHeaders = new Headers();
-                      myHeaders.append(
-                        "Content-Type",
-                        "application/x-www-form-urlencoded"
-                      );
-                      // myHeaders.append(
-                      //   "Cookie",
-                      //   "S=spreadsheet_forms=UnfjNtnYOktGOex6da-9AYi8eGe6Gr67hetNuLA7HAE; NID=210=J-q73wMELgMDjD2hXIUaYZ3jHIbnCzsNv0GzKvDPzppfMyGW5YFUA19A-6W2u_uixkEEspLxQir9utUlFxLMsxlN36FSktB3Wr6pazuI75USsrnzOyeUzAljqsaFT2aZ28d5D-pwi7aW56BQFueqLw1NXj7Nov5KSJt-B9BVEvk"
-                      // );
-
-                      let urlencoded = new URLSearchParams();
-                      urlencoded.append("entry.170303827", name);
-                      urlencoded.append("entry.975948400", jobTitle);
-                      urlencoded.append("entry.1876911322", emailAddr);
-                      urlencoded.append("entry.915376698", phoneNo);
-                      urlencoded.append("entry.1511638443", companyName);
-                      urlencoded.append("entry.135035489", msg);
-
-                      let requestOptions = {
-                        method: "POST",
-                        headers: myHeaders,
-                        body: urlencoded,
-                        redirect: "follow",
-                        mode: "no-cors",
+                      let errors = {
+                        "contact-us-name": false,
+                        "contact-us-email": false,
+                        "contact-us-msg": false,
                       };
+                      if (name === "") {
+                        errors["contact-us-name"] = true;
+                      }
 
-                      fetch(
-                        "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdzesy9x88D2mAOVAMHme5KLOOhsr-W3alv8qDZGRCKTSMe3A/formResponse",
-                        requestOptions
-                      )
-                        .then((r) => {
-                          const uikit = require("uikit");
-                          uikit.notification({
-                            message: "Your response was successfully sent",
-                            status: "success",
-                          });
-                        })
-                        .catch((e) => {});
+                      if (emailAddr === "") {
+                        errors["contact-us-email"] = true;
+                      }
+
+                      if (msg === "") {
+                        errors["contact-us-msg"] = true;
+                      }
+
+                      let hasErrors = false;
+
+                      Object.keys(errors).forEach((i) => {
+                        if (errors[i] === true) {
+                          hasErrors = true;
+                          document
+                            .getElementById(i)
+                            .classList.add("uk-form-danger");
+                        } else {
+                          document
+                            .getElementById(i)
+                            .classList.remove("uk-form-danger");
+                        }
+                      });
+
+                      if (hasErrors) {
+                        return;
+                      }
+
+                      // let myHeaders = new Headers();
+                      // myHeaders.append(
+                      //   "Content-Type",
+                      //   "application/x-www-form-urlencoded"
+                      // );
+                      // // myHeaders.append(
+                      // //   "Cookie",
+                      // //   "S=spreadsheet_forms=UnfjNtnYOktGOex6da-9AYi8eGe6Gr67hetNuLA7HAE; NID=210=J-q73wMELgMDjD2hXIUaYZ3jHIbnCzsNv0GzKvDPzppfMyGW5YFUA19A-6W2u_uixkEEspLxQir9utUlFxLMsxlN36FSktB3Wr6pazuI75USsrnzOyeUzAljqsaFT2aZ28d5D-pwi7aW56BQFueqLw1NXj7Nov5KSJt-B9BVEvk"
+                      // // );
+
+                      // let urlencoded = new URLSearchParams();
+                      // urlencoded.append("entry.170303827", name);
+                      // urlencoded.append("entry.975948400", jobTitle);
+                      // urlencoded.append("entry.1876911322", emailAddr);
+                      // urlencoded.append("entry.915376698", phoneNo);
+                      // urlencoded.append("entry.1511638443", companyName);
+                      // urlencoded.append("entry.135035489", msg);
+
+                      // let requestOptions = {
+                      //   method: "POST",
+                      //   headers: myHeaders,
+                      //   body: urlencoded,
+                      //   redirect: "follow",
+                      //   mode: "no-cors",
+                      // };
+
+                      // fetch(
+                      //   "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdzesy9x88D2mAOVAMHme5KLOOhsr-W3alv8qDZGRCKTSMe3A/formResponse",
+                      //   requestOptions
+                      // )
+                      //   .then((r) => {
+                      //     const uikit = require("uikit");
+                      //     uikit.notification({
+                      //       message: "Your response was successfully sent",
+                      //       status: "success",
+                      //     });
+                      //   })
+                      //   .catch((e) => {});
                     }}
                   >
-                    Submit
+                    {t("submit")}
                   </button>
                 </div>
               </form>
