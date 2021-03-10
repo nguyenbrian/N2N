@@ -162,7 +162,7 @@ export default function Mainpage() {
             <h1>{t("section1-transportation")}</h1>
             <Link href="/industries/transportation">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
-                See more
+                {t("see-how")}
               </button>
             </Link>
           </div>
@@ -196,7 +196,7 @@ export default function Mainpage() {
             <h1>{t("section1-education")}</h1>
             <Link href="/industries/education">
               <button className="n2n-button uk-button uk-button-default uk-light uk-margin-large-top">
-                See more
+                {t("see-how")}
               </button>
             </Link>
           </div>
